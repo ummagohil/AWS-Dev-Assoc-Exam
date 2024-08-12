@@ -1078,310 +1078,270 @@
       },
       {
         "id": 41,
-        "question": "q41",
+        "question": "A company stores all personally identifiable information (PII) in an Amazon DynamoDB table named PII in Account A. An application running on Amazon EC2 instances in Account B requires access to the PII table. An administrators in Account A created an IAM role named AccessPII with privileges to access the PII table, and made account B a trusted entity. Which combination of actional steps should Developers take to access the table? (Select TWO)",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
-            "isCorrect": false
+            "text": "Allow the EC2 IAM role the permission to assume the AccessPII role",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Allow the EC2 IAM role the permission to access the PII table",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Include the AWS API in the application code logic to obtain temporary credentials from the EC2 IAM role to access the PII table",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
+            "text": "Include the AssumeRole API operation in the application code logic to obtain temporary credentials to access the PII table",
+            "isCorrect": true
           },
           {
             "id": "5",
-            "text": "ans 5",
+            "text": "Include the GetSessionToken API operation in the application code logic to obtain temporary credentials to access the PII table",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 42,
-        "question": "q42",
+        "question": "An AWS Lambda function accesses two Amazon DynamoDB tables. A developer wants to improve the performance of the Lambda function by identifying bottlenecks in the function. How can the developer inspect the timing of the DynamoDB API calls?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Add DynamoDB as an event source to the Lambda function. View the performance with Amazon CloudWatch metrics",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Place an Application Load Balancer (ALB) in front of the two DynamoDB tables. Inspect the ALB logs",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Limit Lambda to no more than five concurrent invocations Monitor from the Lambda console",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
-            "isCorrect": false
+            "text": "Enable AWS X-Ray tracing for the function. View the traces from the X-Ray service",
+            "isCorrect": true
           }
         ]
       },
       {
         "id": 43,
-        "question": "q43",
+        "question": "An Amazon RDS database instance is used by many applications to look up historical data. The query rate is relatively constant. When the historical data is updated each day, the resulting write traffic slows the read query performance and affects all application users. What can be done to eliminate the performance impact on application users?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Make sure Amazon RDS is Multi-AZ so it can better absorb increased traffic",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "Create an RDS Read Replica and direct all read traffic to the replica",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Implement Amazon ElastiCache in front of Amazon RDS to buffer the write traffic",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Use Amazon DynamoDB instead of Amazon RDS to buffer the read traffic",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 44,
-        "question": "q44",
+        "question": "A company is developing a serverless ecommerce web application. The application needs to make coordinated, all-or-nothing changes to multiple items in the company's inventory table in Amazon DynamoDB. Which solution will meet these requirements?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Enable transactions for the DynamoDB table. Use the BatchWriteltem operation to update the items",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "Use the TransactWriteitems operation to group the changes. Update the items in the table",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Set up a FIFO queue using Amazon SQS. Group the changes in the queue. Update the table based on the grouped changes",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Create a transaction table in an Amazon Aurora DB cluster to manage the transactions. Write a backend process to sync the Aurora DB table and the DynamoDB table",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 45,
-        "question": "q45",
+        "question": "An application is running on an EC2 instance. The Developer wants to store an application metric in Amazon CloudWatch. What is the best practice for implementing this requirement?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Use the PUT Object API call to send data to an S3 bucket. Use an event notification to invoke a Lambda function to publish data to CloudWatch",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Publish the metric data to an Amazon Kinesis Stream using a PutRecord API call. Subscribe a Lambda function that publishes data to CloudWatch",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Use the CloudWatch PutMetricData API call to submit a custom metric to CloudWatch. Provide the required credentials to enable the API call",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
-            "isCorrect": false
+            "text": "Use the CloudWatch PutMetricData API call to submit a custom metric to CloudWatch. Launch the EC2 instance with the required IAM role to enable the API call",
+            "isCorrect": true
           }
         ]
       },
       {
         "id": 46,
-        "question": "q46",
+        "question": "A Developer needs to design an application running on AWS that will be used to consume Amazon SQS messages that range from 1 KB up to 1GB in size. How should the Amazon SQS messages be managed?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Use Amazon S3 and the Amazon SQS CLI",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "Use Amazon S3 and the Amazon SQS Extended Client Library for Java",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Use Amazon EBS and the Amazon SQS CLI",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Use Amazon EFS and the Amazon SQS CLI",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 47,
-        "question": "q47",
+        "question": "A developer has written a multi-threaded application that is running on a fleet of Amazon EC2 instances. The operations team has requested a graphical method to monitor the number of running threads over time. What is the MOST efficient way to fulfill this request?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Periodically send the thread count to AWS X-Ray segments, then generate a service graph on demand",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "Create a custom Amazon CloudWatch metric and periodically perform a PutMetricData call with the current thread count",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Periodically log thread count data to Amazon S3. Use Amazon Kinesis to process the data into a graph",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Periodically write the current thread count to a table using Amazon DynamoDB and use Amazon CloudFront to create a graph",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 48,
-        "question": "q48",
+        "question": "[reminder: add the image in] The Lambda function below is being called through an API using Amazon API Gateway. The average execution time for the Lambda function is about 1 second. The pseudocode for the Lambda function is as shown in the exhibit. What two actions can be taken to improve the performance of this Lambda function without increasing the cost of the solution? (Select TWO)",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
-            "isCorrect": false
+            "text": "Package only the modules the Lambda function requires",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Use Amazon DynamoDB instead of Amazon RDS",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
-            "isCorrect": false
+            "text": "Move the initialization of the variable Amazon RDS connection outside of the handler function",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "ans 4",
+            "text": "Implement custom database connection pooling with the Lambda function",
             "isCorrect": false
           },
           {
             "id": "5",
-            "text": "ans 5",
+            "text": "Implement local caching of Amazon RDS data so Lambda can re-use the cache",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 49,
-        "question": "q49",
+        "question": "An application on AWS is using third-party APIs. The Developer needs to monitor API errors in the code, and wants to receive notifications if failures go above a set threshold value. How can the Developer achieve these requirements?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Publish a custom metric on Amazon CloudWatch and use Amazon Simple Email Service (SES) for notification",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Use an Amazon CloudWatch API-error metric and use Amazon Simple Notification Service (SNS) for notification",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Use an Amazon CloudWatch API-error metric and use Amazon SES for notification",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
-            "isCorrect": false
+            "text": "Publish a custom metric on Amazon CloudWatch and use Amazon SNS for notification",
+            "isCorrect": true
           }
         ]
       },
       {
         "id": 50,
-        "question": "q50",
+        "question": "The release process workflow of an application requires a manual approval before the code is deployed into the production environment. What is the BEST way to achieve this using AWS CodePipeline?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Use multiple pipelines to allow approval",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "Use an approval action in a stage",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Disable the stage transition to allow manual approval",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Disable a stage just prior the deployment stage",
             "isCorrect": false
           }
         ]
