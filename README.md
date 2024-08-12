@@ -1,15 +1,33 @@
-# TO DO
+# 🤓 AWS Developer Associate Exam Practice
 
-- add all questions and answers into json file for data
-- get the page to render a random set of 65 questions
-- add an option for a timer (once the timer runs out, you take the to the results page - somehow you need to save state all the time/cache - look into it)
-- program state with zustand for the correct answer and results
-- add a results page
-- add a score component to the page (as the user goes through questions, with a final result) + question tracker
-- a feature to enable users to leave the test early - mark all unanswered questions as zero
-- allow users to be able to go back to last question (?!)
-- add styling
-- add testing
-- deploy
+Refresh the page for a random set of 65 questions to practice!
+
+### 📋Aims of App
+
+- Click on answers to questions to check they are correct
+- Get a score at the end, with a pass or fail result
+- Able to get random set of questions on each refresh of page
+
+### 👩‍💻Technical Details
+
+- TypeScript
+- React
+- Next.js
+- TailwindCSS
+
+### 🔧How to Run the App
+
+```bash
+  bun run dev
+```
+
+### 🖥️ Live Preview
 
 https://aws-dev-assoc-exam.vercel.app
+
+### 💭Future Improvements
+
+- Styling
+- Testing
+- Type safety
+- Add additional 250 questions to data file
