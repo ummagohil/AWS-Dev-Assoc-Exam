@@ -1608,224 +1608,189 @@
       },
       {
         "id": 61,
-        "question": "q61",
+        "question": "A serverless application uses an API Gateway and AWS Lambda. Where should the Lambda function store its session information across function calls?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
-            "isCorrect": false
+            "text": "In an Amazon DynamoDB table",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "In an Amazon SQS queue",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "In the local filesystem",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "In an SQLite session table using CDSQLITE_ENABLE_SESSION",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 62,
-        "question": "q62",
+        "question": "An application reads data from an Amazon DynamoDB table. Several times a day, for a period of 15 seconds, the application receives multiple ProvisionedThroughputExceeded errors. How should this exception be handled?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Create a new global secondary index for the table to help with the additional requests",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "Retry the failed read requests with exponential backoff",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Immediately retry the failed read requests",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Use the DynamoDB 'UpdateItem' API to increase the provisioned throughput capacity of the table",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 63,
-        "question": "q63",
+        "question": "A Developer is writing a Linux-based application to run on AWS Elastic Beanstalk. Application requirements state that the application must maintain full capacity during updates while minimizing cost. Which type of Elastic Beanstalk deployment policy should the Developer specify for the environment?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Immutable",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Rolling",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "All at Once",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
-            "isCorrect": false
+            "text": "Rolling with additional batch",
+            "isCorrect": true
           }
         ]
       },
       {
         "id": 64,
-        "question": "q64",
+        "question": "When writing a Lambda function, what is the benefit of instantiating AWS clients outside the scope of the handler?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Legibility and stylistic convention",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "Taking advantage of connection re-use",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Better error handling",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Creating a new instance per invocation",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 65,
-        "question": "q65",
+        "question": "A current architecture uses many Lambda functions invoking one another as large state machine. The coordination of this state machine is legacy custom code that breaks easily. Which AWS Service can help refactor and manage the state machine?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "AWS Data Pipeline",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "AWS SNS with AWS SQS",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Amazon Elastic MapReduce",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
-            "isCorrect": false
+            "text": "AWS Step Functions",
+            "isCorrect": true
           }
         ]
       },
       {
         "id": 66,
-        "question": "q66",
+        "question": "A company is developing a new online game that will run on top of Amazon ECS. Four distinct Amazon ECS services will be part of the architecture, each requiring specific permissions to various AWS services. The company wants to optimize the use of the underlying Amazon EC2 instances by bin packing the containers based on memory reservation. Which configuration would allow the Development team to meet these requirements MOST securely",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Create a new Identity and Access Management (IAM) instance profile containing the required permissions for the various ECS services, then associate that instance role with the underlying EC2 instances",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Create four distinct IAM roles, each containing the required permissions for the associated ECS service, then configure each ECS service to reference the associated IAM role",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Create four distinct IAM roles, each containing the required permissions for the associated ECS service, then, create an IAM group and configure the ECS cluster to reference that group",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
-            "isCorrect": false
+            "text": "Create four distinct IAM roles, each containing the required permissions for the associated ECS service, then configure each ECS task definition to referenсe the associated IAM role",
+            "isCorrect": true
           }
         ]
       },
       {
         "id": 67,
-        "question": "q67",
+        "question": "A Developer must re-implement the business logic for an order fulfilment system. The business logic has to make requests to multiple vendors to decide where to purchase an item. The whole process can take up to a week to complete. What is the MOST efficient and SIMPLEST way to implement a system that meets these requirements?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
-            "isCorrect": false
+            "text": "Use AWS Step Functions to execute parallel Lambda functions, and join the results",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Create an AWS SQS for each vendor, poll the queue from a worker instance, and joint the results",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Use AWS Lambda to asynchronously call a Lambda function for each vendor, and join the results",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Use Amazon CloudWatch Events to orchestrate the Lambda functions",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 68,
-        "question": "q68",
+        "question": "q68 - is placeholder, come back and delete this once all qs in",
         "answers": [
           {
             "id": "1",
@@ -1856,63 +1821,53 @@
       },
       {
         "id": 69,
-        "question": "q69",
+        "question": "A Developer is receiving HTTP 400: ThrottlingException errors intermittently when calling the Amazon CloudWatch API. When a call fails, no data is retrieved. What best practice should first be applied to address this issue?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Contact AWS Support for a limit increase",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Use the AWS CLI to get the metrics",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Analyze the applications and remove the API call",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
-            "isCorrect": false
+            "text": "Retry the call with exponential backoff",
+            "isCorrect": true
           }
         ]
       },
       {
         "id": 70,
-        "question": "q70",
+        "question": "An application is real-time processing millions of events that are received through an API. What service could be used to allow multiple consumers to process the data concurrently and MOST cost-effectively?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Amazon SNS with fanout to an SQS queue for each application",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Amazon SNS with fanout to an SQS FIFO (first-in, first-out) queue for each application",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Amazon Kinesis Firehouse",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
-            "isCorrect": false
+            "text": "Amazon Kinesis Streams",
+            "isCorrect": true
           }
         ]
       },
