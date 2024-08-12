@@ -548,310 +548,265 @@
       },
       {
         "id": 21,
-        "question": "q21",
+        "question": "An application uses Amazon Kinesis Data Streams to ingest and process large streams of data records in real time. Amazon EC2 instances consume and process the data from the shards of the Kinesis data stream by using Amazon Kinesis Client Library (KCL). The application handles the failure scenarios and does not require standby workers. The application reports that a specific shard is receiving more data than expected. To adapt to the changes in the rate of data flow, the 'hot' shard is resharded. Assuming that the initial number of shards in the Kinesis data stream is 4, and after resharding the number of shards increased to 6, what is the maximum number of EC2 instances that can be deployed to process data from all the shards?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "12",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "6",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "4",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "1",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 22,
-        "question": "q22",
+        "question": "A gaming company is developing a mobile game application for iOS® and Android® platforms. This mobile game securely stores user data locally on the device. The company wants to allow users to use multiple device for the game, which requires user data synchronization across device.Which service should be used to synchronize user data across devices without the need to create a backend application?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "AWS Lambda",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Amazon S3",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Amazon DynamoDB",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
-            "isCorrect": false
+            "text": "Amazon Cognito",
+            "isCorrect": true
           }
         ]
       },
       {
         "id": 23,
-        "question": "q23",
+        "question": "A Developer is making changes to a custom application that is currently using AWS Elastic Beanstalk. After the Developer completes the changes, what solutions will update the Elastic Beanstalk environment with the new application version? (Choose TWO)",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
-            "isCorrect": false
+            "text": "Package the application code into a .zip file, and upload, then deploy the packaged application from the AWS Management Console",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Package the application code into a .tar file, create a new application version from the AWS Management Console, then update the environment by using AWS CLI",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Package the application code into a .tar file, and upload and deploy the packaged application from the AWS Management Console",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
+            "text": "Package the application code into a .zip file, create a new application version from the packaged application by using AWS CLI, then update the environment by using AWS CLI",
+            "isCorrect": true
           },
           {
             "id": "5",
-            "text": "ans 5",
+            "text": "Package the application code into a .zip file, create a new application version from the AWS Management Console, then rebuild the environment by using AWS CLI",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 24,
-        "question": "q24",
+        "question": "A company is running an application built on AWS Lambda functions. One Lambda function has performance issues when it has to download a 50MB file from the Internet in every execution. This function is called multiple times a second. What solution would give the BEST performance increase?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
-            "isCorrect": false
+            "text": "Cache the file in the /tmp directory",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Increase the Lambda maximum execution time",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Put an Elastic Load Balancer in front of the Lambda function",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Cache the file in Amazon S3",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 25,
-        "question": "q25",
+        "question": "Queries to an Amazon DynamoDB table are consuming a large amount of read capacity. The table has a significant number of large attributes. The application does not need all of the attribute data. How can DynamoDB costs be minimized while maximizing application performance?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Batch all the writes, and perform the write operations when no or few reads are being performed",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "Create a global secondary index with a minimum set of projected attributes",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Implement exponential backoffs in the application",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Load balance the reads to the table using an Application Load Balancer",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 26,
-        "question": "q26",
+        "question": "A Developer is writing a REST service that will add items to a shopping list. The service is built on Amazon API Gateway with AWS Lambda integrations. The shopping list items are send as query string parameters in the method request. How should the Developer convert the query string parameters to arguments for the Lambda function?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Enable request validation",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Include the Amazon Resource Name (ARN) of the Lambda function",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Change the integration type",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
-            "isCorrect": false
+            "text": "Create a mapping template",
+            "isCorrect": true
           }
         ]
       },
       {
         "id": 27,
-        "question": "q27",
+        "question": "A development team is creating a new application designed to run on AWS. While the test and production environments will run on Amazon EC2 instances, developers will each run their own environment on their laptops. Which of the following is the simplest and MOST secure way to access AWS services from the local development machines?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Use an IAM role to assume a role and execute API calls using the role",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "Create an IAM user to be shared with the entire development team, provide the development team with the access key",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": " Create an IAM user for each developer on the team: provide each developer with a unique access key",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Set up a federation through an Amazon Cognito user pool",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 28,
-        "question": "q28",
+        "question": "How is provisioned throughput affected by the chosen consistency model when reading data from a DynamoDB table?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Strongly consistent reads use the same amount of throughput as eventually consistent reads",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "Strongly consistent reads use more throughput than eventually consistent reads",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Strongly consistent reads use less throughput than eventually consistent reads",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Strongly consistent reads use variable throughput depending on read activity",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 29,
-        "question": "q29",
+        "question": "A developer needs to deploy a new version to an AWS Elastic Beanstalk application. How can the developer accomplish this task?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
-            "isCorrect": false
+            "text": "Upload and deploy the new application version in the Elastic Beanstalk console",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Use the eb init CLI command to deploy a new version",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Terminate the current Elastic Beanstalk environment and create a new one",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Modify the ebextensions folder to add a source option to services",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 30,
-        "question": "q30",
+        "question": "A gaming application stores scores for players in an Amazon DynamoDB table that has four attributes: user_id, user_name, user_score, and user_rank. The users are allowed to update their names only if a user is authenticated by web identity federation. Which set of conditions should be added in the policy attached to the role for the DynamoDB: PutItem API call?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
-            "isCorrect": false
+            "text": "Condition: {ForAllValues:StringEquals: {dynamodb:LeadingKeys: [${www.amazon.com:user+id}], dynamodb:Attributes: [user_name]}}",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Condition:{ForAllValues:StringEquals:{dynamodb:LeadingKeys: [${www.amazon.com:user_name}], dynamodb:Attributes:[user_id]}}",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Condition:{ForAllValues:StringEquals:{dynamodb:LeadingKeys: [${www.amazon.com:user_id}], dynamodb:Attributes:[user_name, user_id]}}",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Condition:{ForAllValues:StringEquals:{dynamodb:LeadingKeys:[${www.amazon.com:user_name}], dynamodb:Attributes:[user_name, user_id]}}",
             "isCorrect": false
           }
         ]
