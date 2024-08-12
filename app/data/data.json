@@ -278,255 +278,220 @@
       },
       {
         "id": 11,
-        "question": "q11",
+        "question": "An AWS Lambda function generates a 3MB JSON file and then uploads it to an Amazon S3 bucket daily. The file contains sensitive information, so the Developer must ensure that it is encrypted before uploading to the bucket. Which of the following modifications should the Developer make to ensure that the data is encrypted before uploading it to the bucket?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Use the default AWS KMS customer master key for S3 in the Lambda function code",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Use the S3 managed key and call the GenerateDataKey API to encrypt the file",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
-            "isCorrect": false
+            "text": "Use the GenerateDataKey API, then use that data key to encrypt the file in the Lambda function code",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Use a custom KMS customer master key created for S3 in the Lambda function code",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 12,
-        "question": "q12",
+        "question": "Company D is running their corporate website on Amazon S3 accessed from http://www.companyd.com. Their marketing team has published new web fonts to a separate S3 bucket accessed by the S3 endpoint https://s3-us-west-1.amazonaws.com/cdfonts. While testing the new web fonts, Company D recognized the web fonts are being blocked by the browser. What should Company D do to prevent the web fonts from being blocked by the browser?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Enable versioning on the cdfonts bucket for each web font",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Create a policy on the cdfonts bucket to enable access to everyone",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Add the Content-MD5 header to the request for webfonts in the cdfonts bucket from the website",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
-            "isCorrect": false
+            "text": "Configure the cdfonts bucket to allow cross-origin requests by creating a CORS configuration",
+            "isCorrect": true
           }
         ]
       },
       {
         "id": 13,
-        "question": "q13",
+        "question": "A developer must extend an existing application that is based on the AWS Services Application Model (AWS SAM). The developer has used the AWS SAM CLI to create the project. The project contains different AWS Lambda functions. Which combination of commands must the developer use to redeploy the AWS SAM application? (Select TWO)",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "sam init",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "sam validate",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
-            "isCorrect": false
+            "text": "sam build",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
+            "text": "sam deploy",
+            "isCorrect": true
           },
           {
             "id": "5",
-            "text": "ans 5",
+            "text": "sam publish",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 14,
-        "question": "q14",
+        "question": "An application deployed on AWS Elastic Beanstalk experiences increased error rates during deployments of new application versions, resulting in service degradation for users. The Development team believes that this is because of the reduction in capacity during the deployment steps. The team would like to change the deployment policy configuration of the environment to an option that maintains full capacity during deployment while using the existing instances. Which deployment policy will meet these requirements while using the existing instances?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "All at once",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Rolling",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
-            "isCorrect": false
+            "text": "Rolling with additional batch",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Immutable",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 15,
-        "question": "q15",
+        "question": "A Developer is creating an application that needs to locate the public IPv4 address of the Amazon EC2 instance on which it runs. How can the application locate this information?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
-            "isCorrect": false
+            "text": "Get the instance metadata by retrieving http://169.254.169.254/latest/metadata/",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Get the instance user data by retrieving http://169.254.169.254/latest/userdata/",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Get the application to run IFCONFIG to get the public IP address",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Get the application to run IFCONFIG to get the public IP address",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 16,
-        "question": "q16",
+        "question": "The development team is working on an API that will be served from Amazon API gateway. The API will be served from three environments: development, test, and production. The API Gateway is configured to use 237 GB of cache in all three stages. Which is the MOST cost-efficient deployment strategy?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Create a single API Gateway with all three stages",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Create three API Gateways, one for each stage in a single AWS account",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Create an API Gateway in three separate AWS accounts",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
-            "isCorrect": false
+            "text": "Enable the cache for development and test environments only when needed",
+            "isCorrect": true
           }
         ]
       },
       {
         "id": 17,
-        "question": "q17",
+        "question": "A company is migrating its on-premises database to Amazon RDS for MySQL. The company has read-heavy workloads, and wants to make sure it re-factors its code to achieve optimum read performance for its queries. How can this objective be met?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Add database retries to effectively use RDS with vertical scaling",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Use RDS with multi-AZ deployment",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
-            "isCorrect": false
+            "text": "Add a connection string to use an RDS read replica for read queries",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Add a connection string to use a read replica on an EC2 instance",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 18,
-        "question": "q18",
+        "question": "A developer needs to modify an application architecture to meet new functional requirements. Application data is stored in Amazon DynamoDB and processed for analysis in a nightly batch. The system analysts do not want to wait unit the next day to view the processed data and have asked to have it available in near-real time. Which application architect pattern would enables the data to be processed as it is received?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
-            "isCorrect": false
+            "text": "Event driven",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Client served driven",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Fan-out driven",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Schedule driven",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 19,
-        "question": "q19",
+        "question": "q19 - placeholder question (reminder to self: remove this once dev is done)",
         "answers": [
           {
             "id": "1",
@@ -557,31 +522,26 @@
       },
       {
         "id": 20,
-        "question": "q20",
+        "question": "A software company needs to make sure user-uploaded documents are securely stored in Amazon S3. The documents must be encrypted at rest in Amazon S3. The company does not want to manage the security infrastructure in-house, but the company still needs extra protection to ensure it has control over its encryption keys due to industry regulations. Which encryption strategy should a developer use to meet these requirements?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Server-side encryption with Amazon S3 managed keys (SSE-S3)",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Server-side encryption with customer-provided encryption keys (SSE-C)",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
-            "isCorrect": false
+            "text": "Server-side encryption with AWS KMS managed keys (SSE-KMS)",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Client-side encryption",
             "isCorrect": false
           }
         ]
