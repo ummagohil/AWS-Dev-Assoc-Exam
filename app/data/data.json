@@ -2408,311 +2408,261 @@
       },
       {
         "id": 91,
-        "question": "q91",
+        "question": "A company wants to implement a continuous integration for its workloads on AWS. The company wants to trigger unit test in its pipeline for commits-on its code repository, and wants to be notified of failure events in the pipeline. How can these requirements be met?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
-            "isCorrect": false
+            "text": "Store the source code in AWS CodeCommit. Create a CodePipeline to automate unit testing. Use Amazon SNS to trigger notifications of failure events",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Store the source code in GitHub. Create a CodePipeline to automate unit testing. Use Amazon SES to trigger notifications of failure events",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Store the source code on GitHub. Create a CodePipeline to automate unit testing. Use Amazon CloudWatch to trigger notifications of failure events",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Store the source code in AWS CodeCommit. Create a CodePipeline to automate unit testing. Use Amazon CloudWatch to trigger notification of failure events",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 92,
-        "question": "q92",
+        "question": "An application takes 40 seconds to process instructions received in an Amazon SQS message. Assuming the SQS queue is configured with the default VisibilityTimeout value, what is the BEST way, upon receiving a message, to ensure that no other instances can retrieve a message that has already been processed or is currently being processed?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
-            "isCorrect": false
+            "text": "Use the ChangeMessageVisibility API to increase the VisibilityTimeout, then use the DeleteMessage API to delete the message.",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Use the DeleteMessage API call to delete the message from the queue, then call DeleteQueue API to remove the queue",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Use the ChangeMessageVisibility API to decrease the timeout value, then use the DeleteMessage API to delete the message",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Use the DeleteMessageVisibility API to cancel the VisibilityTimeout, then use the DeleteMessage API to delete the message",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 93,
-        "question": "q93",
+        "question": "A Developer is developing an application that manages financial transactions. To improve security, multi-factor authentication (MFA) will be required as part of the login protocol. What services can the Developer use to meet these requirements?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Amazon DynamoDB to store MFA session data, and Amazon SNS to send MFA codes",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "Amazon Cognito with MFA",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "AWS Directory Service",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "AWS IAM with MFA enabled",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 94,
-        "question": "q94",
+        "question": "A Developer is writing transactions into a DynamoDB table called 'SystemUpdates' that has 5 write capacity units. Which option has the highest read throughput?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Eventually consistent reads of 5 read capacity units reading items that are 4 KB in size",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "Strongly consistent reads of 5 read capacity units reading items that are 4 KB in size",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Eventually consistent reads of 15 read capacity units reading items that are 1 KB in size",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Strongly consistent reads of 15 read capacity units reading items that are 1 KB in size",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 95,
-        "question": "q95",
+        "question": "A Developer has created an S3 bucket s3://mycoolapp and has enabled server across logging that points to the folder s3://mycoolapp/logs.The Developer moved 100 KB of Cascading Style Sheets (CSS) documents to the folder s3://mycoolapp/css, and then stopped work. When the developer came back a few days later, the bucket was 50 GB. What is the MOST likely cause of this situation?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "The CSS files were not compressed and S3 versioning was enabled",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "S3 replication was enabled on the bucket",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
-            "isCorrect": false
+            "text": "Logging into the same bucket caused exponential log growth",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "An S3 lifecycle policy has moved the entire CSS file to S3 Infrequent Access",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 96,
-        "question": "q96",
+        "question": "A Developer is testing a Docker-based application that uses the AWS SDK to interact with Amazon DynamoDB. In the local development environment, the application has used IAM access keys. The application is now ready for deployment onto an ECS cluster. How should the application authenticate with AWS services in production?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
-            "isCorrect": false
+            "text": "Configure an ECS task IAM role for the application to use",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Refactor the application to call AWS STS AssumeRole based on an instance role",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Configure AWS access key/secret access key environment variables with new credentials",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Configure the credentials file with a new access key/secret access key",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 97,
-        "question": "q97",
+        "question": "A company is using AWS CodeBuild to compile a website from source code stored in AWS CodeCommit. A recent change to the source code has resulted in the CodeBuild project being unable to successfully compile the website. How should the Developer identify the cause of the failures?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Modify the buildspec.yml file to include steps to send the output of build commands to Amazon CloudWatch",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Use a custom Docker image that includes the AWS X-Ray agent in the AWS CodeBuild project configuration",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
-            "isCorrect": false
+            "text": "Check the build logs of the failed phase in the last build attempt in the AWS CodeBuild project build history",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Manually re-run the build process on a local machine so that the output can be visualized",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 98,
-        "question": "q98",
+        "question": "For a deployment using AWS CodeDeploy, what is the run order of the hooks for in-place deployments?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Before Install -> Application Stop -> Application Start -> After Install",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "Application Stop -> Before Install -> After Install -> Application Start",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Before Install -> Application Stop -> Validate Service -> Application Start",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Application Stop -> Before Install -> Validate Service -> Application Start",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 99,
-        "question": "q99",
+        "question": "[to do: add image] A Developer executed a AWS CLI command and received the error shown below. What action should the Developer perform to make this error human-readable?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Make a call to AWS KMS to decode the message",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "Use the AWS STS decode-authorization-message API to decode the message",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Use an open source decoding library to decode the message",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Use the AWS IAM decode-authorization-message API to decode this message",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 100,
-        "question": "q100",
+        "question": "A Developer uses AWS CodeDeploy to automate application deployment that connects to an external MySQL database. The Developer wants to securely access the encrypted secrets, such as API keys and database passwords. Which of the following solutions would involve the LEAST administrative effort?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Save the secrets in Amazon S3 with AWS KMS server-side encryption, and use a signed URL to access them by using the IAM role from Amazon EC2 instances",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Use the instance metadata to store the secrets and to programmatically access the secrets from EC2 instances",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Use the Amazon DynamoDB client-side encryption library to save the secrets in DynamoDB and to programmatically access the secrets from EC2 instances",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
-            "isCorrect": false
+            "text": "Use AWS SSM Parameter Store to store the secrets and to programmatically access them by using the IAM role from EC2 instances",
+            "isCorrect": true
           }
         ]
       }
