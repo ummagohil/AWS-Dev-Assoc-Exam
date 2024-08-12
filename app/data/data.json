@@ -1348,310 +1348,260 @@
       },
       {
         "id": 51,
-        "question": "q51",
+        "question": "A Developer is asked to implement a caching layer in front of Amazon RDS. Cached content is expensive to regenerate in case of service failure. Which implementation below would work while maintaining maximum uptime?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
-            "isCorrect": false
+            "text": "Implement Amazon ElastiCache Redis in Cluster Mode",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Install Redis on an Amazon EC2 instance",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Implement Amazon ElastiCache Memcached",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Migrate the database to Amazon Redshift",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 52,
-        "question": "q52",
+        "question": "A company has written a Java AWS Lambda function to be triggered whenever a user uploads an image to an Amazon S3 bucket. The function converts the original image to several different formats and then copies the resulting images to another Amazon S3 bucket. The Developers find that no images are being copied to the second Amazon S3 bucket. They have tested the code on an Amazon EC2 instance with 1GB of RAM, and it takes an average of 500 seconds to complete. What is the MOST likely cause of the problem?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "The Lambda function has insufficient memory and needs to be increased to 1 GB to match the Amazon EC2 instance",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Files need to be copied to the same Amazon S3 bucket for processing, so the second bucket needs to be deleted",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
-            "isCorrect": false
+            "text": "Lambda functions have a maximum execution limit of 15 minutes, therefore the function is not completing",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "There is a problem with the Java runtime for Lambda, and the function needs to be converted to node.js",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 53,
-        "question": "q53",
+        "question": "A web application is using Amazon Kinesis Streams for clickstream data that may not be consumed for up to 12 hours. How can the Developer implement encryption at rest for data within the Kinesis Streams?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Enable SSL connections to Kinesis",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Use Amazon Kinesis Consumer Library",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Encrypt the data once it is at rest with a Lambda function",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
-            "isCorrect": false
+            "text": "Enable server-side encryption in Kinesis Streams",
+            "isCorrect": true
           }
         ]
       },
       {
         "id": 54,
-        "question": "q54",
+        "question": "A Developer is creating a mobile application with a limited budget. The solution requires a scalable service that will enable customers to sign up and authenticate into the mobile application while using the organization's current SAML 2.0 identity provider. Which AWS service should be used to meet these requirements?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "AWS Lambda",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "Amazon Cognito",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "AWS IAM",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Amazon EC2",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 55,
-        "question": "q55",
+        "question": "A company wants to migrate its web application to AWS and leverage Auto Scaling to handle peak workloads. The Solutions Architect determined that the best metric for an Auto Scaling event is the number of concurrent users. Based on this information, what should the Developer use to autoscale based on concurrent users?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "An Amazon SNS topic to be triggered when a concurrent user threshold is met",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "An Amazon Cloudwatch NetworkIn metric",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Amazon CloudFront to leverage AWS Edge Locations",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
-            "isCorrect": false
+            "text": "A Custom Amazon CloudWatch metric for concurrent users",
+            "isCorrect": true
           }
         ]
       },
       {
         "id": 56,
-        "question": "q56",
+        "question": "A Developer has written a serverless application using multiple AWS services. The business logic is written as a Lambda function which has dependencies on third-party libraries. The Lambda function endpoints will be exposed using Amazon API Gateway. The Lambda function will write the information to Amazon DynamoDB. The Developer is ready to deploy the application but must have the ability to rollback. How can this deployment be automated, based on these requirements?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Deploy using Amazon Lambda API operations to create the Lambda function by providing a deployment package",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Use an AWS CloudFormation template and use CloudFormation syntax to define the Lambda function resource in the template.",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
-            "isCorrect": false
+            "text": "Use syntax conforming to the Serverless Application Model in the AWS CloudFormation template to define the Lambda function resource",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Create a bash script which uses AWS CLI to package and deploy the application",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 57,
-        "question": "q57",
+        "question": "A game stores user game data in an Amazon DynamoDB table. Individual users should not have access to other users' game data. How can this be accomplished?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Encrypt the game data with individual user keys",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "Restrict access to specific items based on certain primary key values",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Stage data in SQS queues to inject metadata before accessing DynamoDB",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Read records from DynamoDB and discard irrelevant data client-side",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 58,
-        "question": "q58",
+        "question": "A Developer is creating a web application that requires authentication, but also needs to support guest access to provide users limited access without having to authenticate. What service can provide support for the application to allow guest access?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "IAM temporary credentials using AWS STS",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Amazon Directory Service",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
-            "isCorrect": false
+            "text": "Amazon Cognito with unauthenticated access enabled",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "IAM with SAML integration",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 59,
-        "question": "q59",
+        "question": "[reminder: add image/code block] Given the source code for an AWS Lambda function in the local store.py containing a handler function called get_store and the following AWS CloudFormation template. What should be done to prepare the template so that it can be deployed using the AWS CLI command aws cloudformation deploy?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Use AWS CloudFormation compile to base64 encode and embed the source file into a modified CloudFormation template",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "Use AWS CloudFormation package to upload the source code to an Amazon S3 bucket and produce a modified CloudFormation template",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Use AWS Lambda zip to package the source file together with the CloudFormation template and deploy the resulting zip archive",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Use AWS Serverless create-package to embed the source file directly into the existing CloudFormation template",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 60,
-        "question": "q60",
+        "question": "A Developer has created a large Lambda function, and deployment is failing with the following error:ClientError: An error occurred (InvalidParameterValueException) when calling the CreateFunction operation: Unzipped size must be smaller than XXXXXXXXX bytes', where XXXXXXXXX is the current Lambda limit. What can the Developer do to fix this problem?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Submit a limit increase request to AWS Support to increase the function to the size needed",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Use a compression algorithm that is more efficient than ZIP",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
-            "isCorrect": false
+            "text": "Break the function into multiple smaller Lambda functions",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "ZIP the ZIP file twice to compress it further",
             "isCorrect": false
           }
         ]
