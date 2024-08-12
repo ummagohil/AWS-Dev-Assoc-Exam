@@ -813,310 +813,265 @@
       },
       {
         "id": 31,
-        "question": "q31",
+        "question": "A developer wants the ability to roll back to a previous version of an AWS Lambda function in the event of errors caused by a new deployment. How can the developer achieve this with MINIMAL impact on users?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Change the application to use an alias that points to the current version. Deploy the new version of the code. Update the alias to use the newly deployed version. If too many errors are encountered, point the alias back to the previous version",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "Change the application to use an alias that points to the current version. Deploy the new version of the code. Update the alias to direct 10% of users to the newly deployed version. If too many errors are encountered, send 100% of traffic to the previous version",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Do not make any changes to the application Deploy the new version of the code. If too many errors are encountered, point the application back to the previous version using the version number in the Amazon Resource Name (ARN)",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Create three aliases: new, existing, and router. Point the existing alias to the current version. Have the router alias direct 100% of users to the existing alias. Update the application to use the router alias. Deploy the new version of the code. Point the new alias to this version. Update the router alias to direct 10% of users to the new alias. If too many errors are encountered, send 100% of traffic to the existing alias",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 32,
-        "question": "q32",
+        "question": "An application contains two components: one component to handle HTTP requests, and another component to handle background processing tasks. Each component must scale independently. The developer wants to deploy this application using AWS Elastic Beanstalk. How should this application be deployed, based on these requirements?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Deploy the application in a single Elastic Beanstalk environment",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "Deploy each component in a separate Elastic Beanstalk environment",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Use multiple Elastic Beanstalk environments for the HTTP component but one environment for the background task component",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Use multiple Elastic Beanstalk environments for the background task component but one environment for the HTTP component",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 33,
-        "question": "q33",
+        "question": "A company is using AWS CloudFormation templates to deploy AWS resources. The company needs to update one of its AWS CloudFormation stacks. What can the company do to find out how the changes will impact the resources that are running?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
-            "isCorrect": false
+            "text": "Investigate the change sets",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Investigate the stack policies",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Investigate the Metadata section",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Investigate the Resources section",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 34,
-        "question": "q34",
+        "question": "A developer is creating a serverless web application and maintains different branches of code. The developer wants to avoid updating the Amazon API Gateway target endpoint each time a new code push is performed. What solution would allow the developer to perform a code push efficiently, without the need to update the API Gateway?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Associate different AWS Lambda functions to an API Gateway target endpoint",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Create different stages in API Gateway, then associate API Gateway with aws Lambda",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
-            "isCorrect": false
+            "text": "Create aliases and versions In AWS Lambda",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Tag the AWS Lambda functions with different names",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 35,
-        "question": "q35",
+        "question": "An application running on EC2 instances is storing data in an S3 bucket. Security policy mandates that all data must be encrypted in transit. How can the Developer ensure that all traffic to the S3 bucket is encrypted?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Install certificates on the EC2 instances",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "Create a bucket policy that allows traffic where SecureTransport is true",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Create an HTTPS redirect on the EC2 instances",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Create a bucket policy that denies traffic where SecureTransport is false",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 36,
-        "question": "q36",
+        "question": "A supplier is writing a new RESTful API for customers to query the status of orders. The customers requested the following API endpoint http://www.supplierdomain.com/status/customerID. Which of the following application designs meet the requirements? (Select TWO)",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Amazon SQS; Amazon SNS",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "Elastic Load Balancing; Amazon EC2",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Amazon ElastiCache; Amazon Elacticsearch Service",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
+            "text": "Amazon API Gateway; AWS Lambda",
+            "isCorrect": true
           },
           {
             "id": "5",
-            "text": "ans 5",
+            "text": "Amazon S3; Amazon CloudFront",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 37,
-        "question": "q37",
+        "question": "A developer Is designing an AWS Lambda function that create temporary files that are less than 10 MB during execution. The temporary files will be accessed and modified multiple times during execution. The developer has no need to save or retrieve these files in the future. Where should the temporary file be stored?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
-            "isCorrect": false
+            "text": "the /tmp directory",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Amazon EFS",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Amazon EBS",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Amazon S3",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 38,
-        "question": "q38",
+        "question": "A website's page load times are gradually increasing as more users access the system at the same time. Analysis indicates that a user profile is being loaded from a database in all the web pages being visited by each user and this is increasing the database load and the page load latency. To address this issue the Developer decides to cache the user profile data. Which caching strategy will address this situation MOST efficiently?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Create a new Amazon EC2 Instance and run a NoSQL database on it. Cache the profile data within this database using the write-through caching strategy",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "Create an Amazon ElastiCache cluster to cache the user profile data. Use a cache-aside caching strategy",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Use a dedicated Amazon RDS instance for caching profile data. Use a write-through caching strategy",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Create an ElastiCache cluster to cache the user profile data. Use a write-through caching strategy",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 39,
-        "question": "q39",
+        "question": "An advertising company has a dynamic website with heavy traffic. The company wants to migrate the website infrastructure to AWS to handle everything except website development. Which solution BEST meets these requirements?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Use AWS VM Import to migrate a web server image to AWS Launch the image on a compute-optimized Amazon EC2 instance",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Launch multiple Amazon Lightsail instance behind a load balancer. Set up the website on those instances",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
-            "isCorrect": false
+            "text": "Deploy the website code in an AWS Elastic Beanstalk environment. Use Auto Scaling to scale the numbers of instance",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Use Amazon S3 to host the website. Use Amazon CloudFront to deliver the content at scale",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 40,
-        "question": "q40",
+        "question": "A developer is writing an AWS Lambda function. The developer wants to log key events that occur during the Lambda function and include a unique identifier to associate the events with a specific function invocation. Which of the following will help the developer accomplish this objective?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
-            "isCorrect": false
+            "text": "Obtain the request identifier from the Lambda context object. Architect the application to write logs to the console",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Obtain the request identifier from the Lambda event object. Architect the application to write logs to a file",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Obtain the request identifier from the Lambda event object. Architect the application to write logs to the console",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Obtain the request identifier from the Lambda context object. Architect the application to write logs to a file",
             "isCorrect": false
           }
         ]
