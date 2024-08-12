@@ -1873,310 +1873,265 @@
       },
       {
         "id": 71,
-        "question": "q71",
+        "question": "Where should the appspec.yml file be placed in order for AWS CodeDeploy to work?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
-            "isCorrect": false
+            "text": "In the root of the application source code directory structure",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "In the bin folder along with all the complied code",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "In an S3 bucket",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "In the same folder as the application configuration files",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 72,
-        "question": "q72",
+        "question": "An application will ingest data at a very high throughput from many sources and must store the data in an Amazon S3 bucket. Which service would BEST accomplish this task?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
-            "isCorrect": false
+            "text": "Amazon Kinesis Firehose",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Amazon S3 Acceleration Transfer",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Amazon SQS",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Amazon SNS",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 73,
-        "question": "q73",
+        "question": "A Developer is creating a Lambda function and will be using external libraries that are not included in the standard Lambda libraries. What action would minimize the Lambda compute time consumed?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Install the dependencies and external libraries at the beginning of the Lambda function",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Create a Lambda deployment package that includes the external libraries",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Copy the external libraries to Amazon S3, and reference the external libraries to the S3 location",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
-            "isCorrect": false
+            "text": "Install the external libraries in Lambda to be available to all Lambda functions",
+            "isCorrect": true
           }
         ]
       },
       {
         "id": 74,
-        "question": "q74",
+        "question": "During non-peak hours, a Developer wants to minimize the execution time of a full Amazon DynamoDB table scan without affecting normal workloads. The workloads average half of the strongly consistent read capacity units during non-peak hours. How would the Developer optimize this scan?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
-            "isCorrect": false
+            "text": "Use parallel scans while limiting the rate",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Use sequential scans",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Increase read capacity units during the scan operation",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Change consistency to eventually consistent during the scan operation",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 75,
-        "question": "q75",
+        "question": "A large e-commerce site is being designed to deliver static objects from Amazon S3. The Amazon S3 bucket will server more than 300 GET requests per second. What should be done to optimize performance? (Choose TWO)",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
-            "isCorrect": false
+            "text": "Integrate Amazon CloudFront with Amazon S3",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "Enable Amazon S3 cross-region replication",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Delete expired Amazon S3 server log files",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
+            "text": "Configure Amazon S3 lifecycle rules.Randomize Amazon S3 key name prefixes",
             "isCorrect": false
           },
           {
             "id": "5",
-            "text": "ans 5",
+            "text": "Randomize Amazon S3 key name prefixes",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 76,
-        "question": "q76",
+        "question": "A legacy service has an XML-based SOAP interface. The Developer wants to expose the functionality of the service to external clients with the Amazon API Gateway. Which technique will accomplish this?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
-            "isCorrect": false
+            "text": "Create a RESTful API with the API Gateway; transform the incoming JSON into a valid XML message for the SOAP interface using mapping templates",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Create a RESTful API with the API Gateway; pass the incoming JSON to the SOAP interface through an Application Load Balancer",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Create a RESTful API with the API Gateway; pass the incoming XML to the SOAP interface through an Application Load Balancer",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Create a RESTful API with the API Gateway; transform the incoming XML into a valid message for the SOAP interface using mapping templates",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 77,
-        "question": "q77",
+        "question": "A Developer has an application that can upload tens of thousands of objects per second to Amazon S3 in parallel within a single AWS account. As part of new requirements, data stored in S3 must use server side encryption with AWS KMS (SSE-KMS). After creating this change, performance of the application is slower. Which of the following is MOST likely the cause of the application latency?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Amazon S3 throttles the rate at which uploaded objects can be encrypted using Customer Master Keys",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "The AWS KMS API calls limit is less than needed to achieve the desired performance",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "The client encryption of the objects is using a poor algorithm",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "KMS requires that an alias be used to create an independent display name that can be mapped to a CM",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 78,
-        "question": "q78",
+        "question": "A customer wants to deploy its source code on an AWS Elastic Beanstalk environment. The customer needs to perform deployment with minimal outage and should only use existing instances to retain application access log. What deployment policy would satisfy these requirements?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
-            "isCorrect": false
+            "text": "Rolling",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "All at once",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Rolling with an additional batch",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Immutable",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 79,
-        "question": "q79",
+        "question": "A Developer has setup an Amazon Kinesis Stream with 4 shards to ingest a maximum of 2500 records per second. A Lambda function has been configured to process these records. In which order will these records be processed?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Lambda will receive each record in the reverse order it was placed into the stream following a LIFO (last-in, first-out) method",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Lambda will receive each record in the exact order it was placed into the stream following a FIFO (first­-in, first-out) method",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
-            "isCorrect": false
+            "text": "Lambda will receive each record in the exact order it was placed into the shard following a FIFO (first-in, first-out) method. There is no guarantee of order across shards.",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "The Developer can select FIFO, (first-in, first-out), LIFO (last-in, last-out), random, or request specific record using the getRecords API",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 80,
-        "question": "q80",
+        "question": "An organization must store thousands of sensitive audio and video files in an Amazon S3 bucket. Organizational security policies require that all data written to this bucket be encrypted. How can compliance with this policy be ensured?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Use AWS Lambda to send notifications to the security team if unencrypted objects are pun in the bucket",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "Configure an Amazon S3 bucket policy to prevent the upload of objects that do not contain the x-amz­-server-side-encryption header",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Create an Amazon CloudWatch event rule to verify that all objects stored in the Amazon S3 bucket are encrypted",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Configure an Amazon S3 bucket policy to prevent the upload of objects that contain the x-amz-server­side-encryption header",
             "isCorrect": false
           }
         ]
