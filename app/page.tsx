@@ -7,6 +7,17 @@ export default function Home() {
     .filter(() => Math.random() < 66 / data.length)
     .slice(0, 65);
 
+  /**
+   * @TODO:
+   * - create a state to store counter of isCorrect for score
+   * - change button background or text when answer isCorrect is true
+   * - add all other questions to json file
+   * - add a timer [check allocated time for exam] with stop and start - maybe modal to check results or automatically update score at top
+   * - unit tests
+   * - styling
+   * - documentation (readme)
+   */
+
   return (
     <ol>
       {randomQuestions.map((a: any) => (
