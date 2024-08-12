@@ -2138,88 +2138,78 @@
       },
       {
         "id": 81,
-        "question": "q81",
+        "question": "An application is designed to use Amazon SQS to manage messages from many independent senders. Each sender's messages must be processed in the order they are received. Which SQS feature should be implemented by the Developer?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Configure each sender with a unique MessageGroupId",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Enable MessageDeduplicationIds on the SQS queue",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
-            "isCorrect": false
+            "text": "Configure each message with unique MessageGroupIds",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Enable ContentBasedDeduplication on the SQS queue",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 82,
-        "question": "q82",
+        "question": "A Developer created a dashboard for an application using Amazon API Gateway, Amazon S3, AWS Lambda, and Amazon RDS. The Developer needs an authentication mechanism allowing a user to sign in and view the dashboard. It must be accessible from mobile applications, desktops, and tablets, and must remember user preferences across platforms. Which AWS service should the Developer use to support this authentication scenario?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "AWS KMS",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "Amazon Cognito",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "AWS Directory Service",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Amazon IAM",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 83,
-        "question": "q83",
+        "question": "A Lambda function is packaged for deployment to multiple environments, including development, test, production, etc. Each environment has unique set of resources such as databases, etc. How can the Lambda function use the resources for the current environment?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Apply tags to the Lambda functions",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Hardcore resources in the source code",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
-            "isCorrect": false
+            "text": "Use environment variables for the Lambda functions",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "ans 4",
+            "text": "Use separate function for development and production",
             "isCorrect": false
           },
           {
@@ -2231,218 +2221,188 @@
       },
       {
         "id": 84,
-        "question": "q84",
+        "question": "A Developer needs temporary access to resources in a second account. What is the MOST secure way to achieve this?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Use the Amazon Cognito user pools to get short-lived credentials for the second account",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Create a dedicated IAM access key for the second account, and send it by mail",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
-            "isCorrect": false
+            "text": "Create a cross-account access role, and use sts: AssumeRole API to get short-lived credentials",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Establish trust, and add an SSH key for the second account to the IAM user",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 85,
-        "question": "q85",
+        "question": "A Developer needs to use AWS X-Ray to monitor an application that is deployed on EC2 instances. What steps have to be executed to perform the monitoring?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Deploy the X-Ray SDK with the application and use X-Ray annotation",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "Install the X-Ray daemon and instrument the application code",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Install the X-Ray daemon and configure it to forward data to Amazon CloudWatch Events",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Deploy the X-Ray SDK with the application and instrument the application code",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 86,
-        "question": "q86",
+        "question": "A Developer is creating an Auto Scaling group whose instances need to publish a custom metric to Amazon CloudWatch. Which method would be the MOST secure way to authenticate a CloudWatch PUT request?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Create an IAM user with PutMetricData permission and put the user credentials in a private repository; have applications pull the credentials as needed",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Create an IAM user with PutMetricData permission, and modify the Auto Scaling launch configuration to inject the user credentials into the instance user data",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Modify the CloudWatch metric policies to allow the PutMetricData permission to instances from the Auto Scaling group",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
-            "isCorrect": false
+            "text": "Create an IAM role with PutMetricData permission and modify the Auto Scaling launching configuration to launch instances using that role",
+            "isCorrect": true
           }
         ]
       },
       {
         "id": 87,
-        "question": "q87",
+        "question": "[to do: add image]A Developer is working on an application that tracks hundreds of millions of product reviews in an Amazon DynamoDB table. The records include the data elements shown in the table. Which field, when used as the partition key, would result in the MOST consistent performance using DynamoDB?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "starRating",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "reviewID",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "comment",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "productID",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 88,
-        "question": "q88",
+        "question": "[to do: add image]A development team consists of 10 team members. Similar to a home directory for each team member, the manager wants to grant access to user-specific folders in an Amazon S3 bucket. For the team member with the username 'TeamMemberX', the snippet of the IAM policy looks like this. Instead of creating distinct policies for each team member, what approach can be used to make this policy snippet generic for all team members?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
-            "isCorrect": false
+            "text": "Use IAM policy condition",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Use IAM policy principal",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Use IAM policy variables",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "Use IAM policy resource",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 89,
-        "question": "q89",
+        "question": "A company needs to encrypt data at rest, but it wants to leverage an AWS managed service using its own master key. Which of the following AWS service can be used to meet these requirements?",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "SSE with Amazon S3",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
+            "text": "SSE with AWS KMS",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Client-side encryption",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
+            "text": "AWS IAM roles and policies",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 90,
-        "question": "q90",
+        "question": "A Developer has created a software package to be deployed on multiple EC2 instances using IAM roles. What actions could be performed to verify IAM access to get records from Amazon Kinesis Streams? (Select TWO)",
         "answers": [
           {
             "id": "1",
-            "text": "ans 1",
+            "text": "Use the AWS CLI to retrieve the IAM group",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "ans 2",
+            "text": "Query Amazon EC2 metadata for in-line IAM policies",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "ans 3",
+            "text": "Request a token from AWS STS, and perform a describe action",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
+            "text": "Perform a get action using the '--dry-run' argument",
+            "isCorrect": true
           },
           {
             "id": "5",
-            "text": "ans 5",
-            "isCorrect": false
+            "text": "Validate the IAM role policy with the IAM policy simulator",
+            "isCorrect": true
           }
         ]
       },
