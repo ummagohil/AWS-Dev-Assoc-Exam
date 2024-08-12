@@ -13,6 +13,7 @@ export default function Home() {
    * - change button background or text when answer isCorrect is true
    * - add all other questions to json file
    * - add a timer [check allocated time for exam] with stop and start - maybe modal to check results or automatically update score at top
+   * - add type check safety to everything
    * - unit tests
    * - styling
    * - documentation (readme)
