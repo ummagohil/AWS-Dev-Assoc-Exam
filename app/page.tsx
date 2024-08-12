@@ -1,3 +1,4 @@
+"use client";
 import Data from "./data/data.json";
 
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
   const randomQuestions: any = data
     .filter(() => Math.random() < 20 / data.length)
     .slice(0, 65);
+
   return (
     <div>
       {randomQuestions.map((a: any) => (
@@ -12,11 +14,15 @@ export default function Home() {
           <br />
           <p>{a.question}</p>
 
-          <p>
-            {a.answers.map((a: any) => {
-              a;
-            })}
-          </p>
+          <ul key={a.question.id}>
+            {a.answers.map((a: any) => (
+              <li key={a?.answers?.id}>
+                <button onClick={() => console.log(a?.isCorrect)}>
+                  {a.text}
+                </button>
+              </li>
+            ))}
+          </ul>
         </div>
       ))}
     </div>
