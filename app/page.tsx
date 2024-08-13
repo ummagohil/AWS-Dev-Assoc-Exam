@@ -13,13 +13,14 @@ export default function Home() {
   }>({});
 
   useEffect(() => {
+    // This will run once when the component mounts (e.g., page load or refresh)
     const data: any = Data.quiz.questions;
     const generatedQuestions = data
       .filter(() => Math.random() < 66 / data.length)
       .slice(0, 65);
 
     setRandomQuestions(generatedQuestions);
-  }, []);
+  }, []); // Empty dependency array ensures this runs only on mount
 
   const handleAnswerClick = (
     questionId: number,
@@ -29,7 +30,6 @@ export default function Home() {
   ) => {
     event.preventDefault();
 
-    // If the question has already been answered, do nothing
     if (scoredQuestions[questionId]) {
       return;
     }
@@ -42,12 +42,10 @@ export default function Home() {
       },
     }));
 
-    // If the answer is correct and the question hasn't been scored yet
     if (isCorrect && !scoredQuestions[questionId]) {
       setScore((prevScore) => prevScore + 1);
     }
 
-    // Mark the question as scored (i.e., answered)
     setScoredQuestions((prevScored) => ({
       ...prevScored,
       [questionId]: true,
