@@ -42,7 +42,7 @@ export default function Home() {
     };
 
     const totalCorrectAnswers = question.answers.filter(
-      (a) => a.isCorrect
+      (a: any) => a.isCorrect
     ).length;
     const correctSelections = Object.values(currentSelections).filter(
       (value) => value
