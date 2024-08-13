@@ -3181,17 +3181,17 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Compress the application to a .zip file and upload it into AWS Lambda",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Test the new AWS Lambda function by first tracing it in AWS X-Ray",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Bundle the serverless application using a SAM package",
             "isCorrect": false
           },
           {
@@ -3207,22 +3207,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Use server-side encryption with Amazon S3-managed keys",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Use server-side encryption with AWS KMS-managed keys",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Use client-side encryption with customer master keys",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Use server-side encryption with customer-provided keys",
             "isCorrect": false
           }
         ]
@@ -3233,22 +3233,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Develop an AWS Lambda function to check the upload folder in the S3 bucket. If new uploaded pictures are detected, the Lambda function will scan and parse them",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Once a picture is uploaded to Amazon S3, publish the event to an Amazon SQS queue. Use the queue as an event source to trigger an AWS Lambda function. In the Lambda function, scan and parse the picture",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "When the user uploads a picture, invoke an API hosted in Amazon API Gateway. The API will invoke an AWS Lambda function to scan and parse the picture",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Create a state machine in AWS Step Functions to check the upload folder in the S3 bucket. If a new picture is detected, invoke an AWS Lambda function to scan and parse it",
             "isCorrect": false
           }
         ]
@@ -3259,22 +3259,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Create two pod specifications. Make one to include the application container and the other to include the other container. Link the two pods together",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Create two task definitions. Make one to include the application container and the other to include the other container. Mount a shared volume between the two tasks",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Create one task definition. Specify both containers in the definition. Mount a shared volume between those two containers",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Create a single pod specification. Include both containers in the specification. Mount a persistent volume to both containers",
             "isCorrect": false
           }
         ]
@@ -3285,22 +3285,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Create a custom Amazon CloudWatch alarm that sends a notification to an Amazon SNS topic when the CPU utilization exceeds 80%",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Create a custom AWS Cloud Trail alarm that sends a notification to an Amazon SNS topic when the CPU utilization exceeds 80%",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Create a cron job on the EC2 instance that executes the –describe-instance-information command on the host instance every 15 minutes and sends the results to an Amazon SNS topic",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Create an AWS Lambda function that queries the AWS CloudTrail logs for the CPUUtilization metric every 15 minutes and sends a notification to an Amazon SNS topic when the CPU utilization exceeds 80%",
             "isCorrect": false
           }
         ]
@@ -3311,22 +3311,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Create an IAM role that has permissions to access the database. Attach the role to the EC2 instance",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Use AWS Secrets Manager to store the credentials. Retrieve the credentials from Secrets Manager as needed",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Store the credentials in an encrypted text file in an Amazon S3 bucket. Configure the EC2 instance's user data to download the credentials from Amazon S3 as the instance boots",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Store the user name and password credentials directly in the source code. No further action is needed because the source code is stored in a private repository",
             "isCorrect": false
           }
         ]
@@ -3337,22 +3337,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Use the Elastic Beanstalk All at once deployment policy to update all instances simultaneously",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Perform an Elastic Beanstalk Rolling with additional batch deployment",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Deploy the new version in a new Elastic Beanstalk environment and swap environment URLs",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Perform an Elastic Beanstalk Rolling deployment",
             "isCorrect": false
           }
         ]
@@ -3363,22 +3363,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Copy the documents to a separate S3 bucket that has a lifecycle policy for deletion after 15 minutes",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Create a presigned S3 URL using the AWS SDK with an expiration time of 15 minutes",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Use server-side encryption with AWS KMS managed keys (SSE-KMS) and download the documents using HTTPS",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Modify the S3 bucket policy to only allow specific users to download the documents. Revert the change after 15 minutes",
             "isCorrect": false
           }
         ]
@@ -3389,74 +3389,74 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Use ResultPath in a Catch statement to include the error with the original input",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Use InputPath in a Catch statement and set the value to null",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Use Error Equals in a Retry statement to include the error with the original input",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Use OutputPath in a Retry statement and set the value to $",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 129,
-        "question": "A developer receives the following error message when trying to launch or terminate an Amazon EC2 instance using a boto3 script. What should the developer do to correct this error message?",
+        "question": "[to do: add image] A developer receives the following error message when trying to launch or terminate an Amazon EC2 instance using a boto3 script. What should the developer do to correct this error message?",
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Assign an IAM role to the EC2 instance to allow necessary API calls on behalf of the client",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Implement an exponential backoff algorithm for optimizing the number of API requests made to Amazon EC2",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Increase the overall network bandwidth to handle higher API request rates",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Upgrade to the latest AWS CLI version so that boto3 can handle higher request rates",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 130,
-        "question": "Given the following AWS CloudFormation template. What is the MOST efficient way to reference the new Amazon S3 bucket from another AWS CloudFormation template?",
+        "question": "[to do: add image] Given the following AWS CloudFormation template. What is the MOST efficient way to reference the new Amazon S3 bucket from another AWS CloudFormation template?",
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Add an Export declaration to the Outputs section of the original template and use ImportValue in other templates",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Add Exported: true to the Contentbucket in the original template and use ImportResource in other templates",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Create a custom AWS CloudFormation resource that gets the bucket name from the ContentBucket resource of the first stack",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Use Fn::Include to include the existing template in other templates and use the ContentBucket resource directly",
             "isCorrect": false
           }
         ]
