@@ -31,3 +31,6 @@ body {
     text-wrap: balance;
   }
 } */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

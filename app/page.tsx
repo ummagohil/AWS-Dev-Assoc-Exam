@@ -1,42 +1,92 @@
 "use client";
+import { useState, useEffect } from "react";
 import Data from "./data/data.json";
 
 export default function Home() {
-  const data: any = Data.quiz.questions;
-  const randomQuestions: any = data
-    .filter(() => Math.random() < 66 / data.length)
-    .slice(0, 65);
+  const [selectedAnswers, setSelectedAnswers] = useState<{
+    [key: number]: { [key: string]: boolean };
+  }>({});
+  const [score, setScore] = useState<number>(0);
+  const [randomQuestions, setRandomQuestions] = useState<any[]>([]);
+  const [scoredQuestions, setScoredQuestions] = useState<{
+    [key: number]: boolean;
+  }>({});
 
-  /**
-   * @TODO:
-   * - create a state to store counter of isCorrect for score
-   * - change button background or text when answer isCorrect is true
-   * - add all other questions to json file
-   * - add a timer [check allocated time for exam] with stop and start - maybe modal to check results or automatically update score at top
-   * - add type check safety to everything
-   * - unit tests
-   * - styling
-   * - documentation (readme)
-   */
+  useEffect(() => {
+    const data: any = Data.quiz.questions;
+    const generatedQuestions = data
+      .filter(() => Math.random() < 66 / data.length)
+      .slice(0, 65);
+
+    setRandomQuestions(generatedQuestions);
+  }, []);
+
+  const handleAnswerClick = (
+    questionId: number,
+    answerId: string,
+    isCorrect: boolean,
+    event: React.MouseEvent<HTMLButtonElement>
+  ) => {
+    event.preventDefault();
+
+    // If the question has already been answered, do nothing
+    if (scoredQuestions[questionId]) {
+      return;
+    }
+
+    setSelectedAnswers((prevState) => ({
+      ...prevState,
+      [questionId]: {
+        ...prevState[questionId],
+        [answerId]: isCorrect,
+      },
+    }));
+
+    // If the answer is correct and the question hasn't been scored yet
+    if (isCorrect && !scoredQuestions[questionId]) {
+      setScore((prevScore) => prevScore + 1);
+    }
+
+    // Mark the question as scored (i.e., answered)
+    setScoredQuestions((prevScored) => ({
+      ...prevScored,
+      [questionId]: true,
+    }));
+  };
 
   return (
-    <ol>
-      {randomQuestions.map((a: any) => (
-        <div key={a.key}>
-          <br />
-          <li>{a.question}</li>
+    <div>
+      <h1>Total Score: {score}</h1>
+      <ol>
+        {randomQuestions.map((q: any) => (
+          <div key={q.id}>
+            <br />
+            <li>{q.question}</li>
 
-          <ul key={a.question.id}>
-            {a.answers.map((a: any) => (
-              <li key={a?.answers?.id}>
-                <button onClick={() => console.log(a?.isCorrect)}>
-                  {a.text}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
-    </ol>
+            <ul>
+              {q.answers.map((a: any) => (
+                <li key={a.id}>
+                  <button
+                    className={
+                      selectedAnswers[q.id]?.[a.id] !== undefined
+                        ? selectedAnswers[q.id][a.id]
+                          ? "bg-green-500"
+                          : "bg-red-500"
+                        : ""
+                    }
+                    onClick={(event) =>
+                      handleAnswerClick(q.id, a.id, a.isCorrect, event)
+                    }
+                    disabled={scoredQuestions[q.id] !== undefined}
+                  >
+                    {a.text}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </ol>
+    </div>
   );
 }
