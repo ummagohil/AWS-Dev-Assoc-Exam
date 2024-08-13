@@ -3467,22 +3467,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "AfterInstall",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "DownloadBundle",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "BeforeInstall",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "ValidateService",
             "isCorrect": false
           }
         ]
@@ -3493,22 +3493,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Amazon DynamoDB Streams",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Amazon DynamoDB Accelerator",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Amazon DynamoDB global tables",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Amazon DynamoDB transactions",
             "isCorrect": false
           }
         ]
@@ -3519,23 +3519,28 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Call aws cloudformation package to create the deployment package. Call aws cloudformation deploy to deploy the package afterward",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Call sam package to create the deployment package. Call sam deploy to deploy the package afterward",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Call aws s3 cp to upload the AWS SAM template to Amazon S3. Call aws lambda update-function-code to create the application",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Create a ZIP package locally and call aws serverlessrepo create-application to create the application",
             "isCorrect": false
+          },
+          {
+            "id": "5",
+            "text": "Create a ZIP package and upload it to Amazon S3. Call aws cloudformation create-stack to create the application",
+            "isCorrect": true
           }
         ]
       },
@@ -3545,22 +3550,27 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Use Amazon Cognito to create a user pool and create users in the user pool",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Send multi-factor authentication text codes to users with the Amazon SNS Publish API call in the app code",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Enable multi-factor authentication for the Amazon Cognito user pool",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Use AWS IAM to create IAM users",
+            "isCorrect": false
+          },
+          {
+            "id": "5",
+            "text": "Enable multi-factor authentication for the users created in AWS IAM",
             "isCorrect": false
           }
         ]
@@ -3571,22 +3581,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Set ECS_ENABLE_TASK_IAM_ROLE to false on EC2 instance boot in ECS agent configuration file. Run the first microservice with an IAM role for ECS tasks with read-only access for the Aurora database. Run the second microservice with an IAM role for ECS tasks with read-only access to DynamoDB",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Set ECS_ENABLE_TASK_IAM_ROLE to false on EC2 instance boot in the ECS agent configuration file. Grant the instance profile role read-only access to the Aurora database and DynamoDB",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Set ECS_ENABLE_TASK_IAM_ROLE to true on EC2 instance boot in the ECS agent configuration file. Run the first microservice with an IAM role for ECS tasks with read-only access for the Aurora database. Run the secondmicroservice with an IAM role for ECS tasks with read-only access to DynamoDB",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Set ECS_ENABLE_TASK_IAM_ROLE to true on EC2 instance boot in the ECS agent configuration file. Grant the instance profile role read-only access to the Aurora database and DynamoDB",
             "isCorrect": false
           }
         ]
@@ -3597,22 +3607,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Use the Amazon CloudWatch API to write timestamps to a custom CloudWatch metric. Use the CloudWatch console to analyze the resulting data",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Use the AWS X-Ray API to write trace data into X-Ray from strategic places within the code. Use the Amazon CloudWatch console to analyze the resulting data",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Use the AWS X-Ray API to write trace data into X-Ray from strategic places within the code. Use the X-Ray console to analyze the resulting data",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Use the Amazon CloudWatch API to write timestamps to a custom CloudWatch metric. Use the AWS X-Ray console to analyze the resulting data",
             "isCorrect": false
           }
         ]
@@ -3623,22 +3633,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Increase the Amazon SQS queue polling timeout",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Scale down the Amazon SQS queue to the appropriate size for low traffic demand",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Configure push delivery via Amazon SNS instead of polling the Amazon SQS queue",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Use an Amazon SQS first-in, first-out (FIFO) queue instead of a standard queue",
             "isCorrect": false
           }
         ]
@@ -3649,22 +3659,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Enable AWS CloudTrail logging and use the logs to map each latency and bottleneck",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Enable and configure AWS X-Ray tracing on API Gateway and the Lambda function. Use X-Ray to trace and analyze user requests",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Enable Amazon CloudWatch Logs for the Lambda function. Enable execution logs for API Gateway to view and analyze user request logs",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Enable VPC Flow Logs to capture and analyze network traffic within the VPC",
             "isCorrect": false
           }
         ]
@@ -3675,23 +3685,23 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "The EC2 instance will only be able to list the S3 buckets",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "The EC2 instance will only be able to list the contents of one S3 bucket at a time",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "The EC2 instance will be able to perform all actions on any S3 bucket",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
-            "isCorrect": false
+            "text": "The EC2 instance will not be able to perform any S3 action on any S3 bucket",
+            "isCorrect": true
           }
         ]
       },
@@ -3701,23 +3711,23 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Change the Set the application versions limit by total count setting to zero",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Disable the Lifecycle policy setting",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Change the Set the application version limit by age setting to zero.",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
-            "isCorrect": false
+            "text": "Set Retention to Retain source bundle in S3",
+            "isCorrect": true
           }
         ]
       },
@@ -3727,22 +3737,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "The cache is not being invalidated when the price of the item is changed",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "The price of the item is being retrieved using a write-through ElastiCache cluster",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "The DynamoDB table was provisioned with insufficient read capacity",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "The DynamoDB table was provisioned with insufficient write capacity",
             "isCorrect": false
           }
         ]
@@ -3753,22 +3763,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Use AWS KMS to set up public and private keys for use with AWS CodeCommit",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Set up the Git credential helper to use an AWS credential profile, and enable the helper to send the path to the repositories",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Use AWS Certificate Manager to provision public and private SSL/TLS certificates",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Generate encryption keys using AWS CloudHSM, then export the key for use with AWS CodeCommit",
             "isCorrect": false
           }
         ]
@@ -3779,22 +3789,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Send logs from the Lambda application to an S3 bucket; trigger a Lambda function from the bucket to send data to AWS X-Ray",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Trigger a Lambda function from the application logs in Amazon CloudWatch to submit tracing data to AWS X-Ray",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Use an IAM execution role to give the Lambda function permissions and enable tracing",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Update and add AWS X-Ray daemon code to relevant parts of the Lambda function to set up the trace",
             "isCorrect": false
           }
         ]
@@ -3805,22 +3815,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Create an IAM permission policy attached to the role that allows access to DynamoDB. Add a trust policy to the role that allows DynamoDB to assume the role. Attach a permissions policy to the development group in AWS IAM that allows developers to use the iam:GetRole and iam:PassRole permissions for the role",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Create an IAM permissions policy attached to the role that allows access to DynamoDB. Add a trust policy to the role that allows Amazon EC2 to assume the role. Attach a permissions policy to the development group in AWS IAM that allows developers to use the iam:PassRole permission for the role",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Create an IAM permission policy attached to the role that allows access to Amazon EC2. Add a trust policy to the role that allows DynamoDB to assume the role. Attach a permissions policy to the development group in AWS IAM that allows developers to use the iam:PassRole permission for the role",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Create an IAM permissions policy attached to the role that allows access to DynamoDB. Add a trust policy to the role that allows Amazon EC2 to assume the role. Attach a permissions policy to the development group in AWS IAM that allows developers to use the iam:GetRole permission for the role",
             "isCorrect": false
           }
         ]
@@ -3831,22 +3841,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Install the missing module and specify the current directory as the target. Create a ZIP file to include all files under the current directory, and upload the ZIP file",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Install the missing module in a lib directory. Create a ZIP file to include all files under the lib directory, and upload the ZIP file as dependency file",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "In the Lambda code, invoke a Linux command to install the missing modules under the /usr/lib directory",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "In the Lambda console, create a LB_LIBRARY_PATH environment and specify the value for the system library plan",
             "isCorrect": false
           }
         ]
@@ -3857,22 +3867,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Configure Amazon Cognito identity pools and exchange the JSON Web Token (JWT) for temporary credentials",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Run the web application in an Amazon EC2 instance with the instance profile configured",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Hardcore the credentials, use Amazon S3 to host the web application, and enable server-side encryption",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Use Amazon Cognito user pool JSON Web Tokens (JWITs) to access the DynamoDB APIs",
             "isCorrect": false
           }
         ]
@@ -3883,23 +3893,23 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Use cost allocation reports and AWS OpsWorks to deploy and manage the infrastructure",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Use Amazon CloudWatch metrics and alerts along with resource tagging to deploy and manage the infrastructure",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Use AWS Elastic Beanstalk and AWS CodeCommit to deploy and manage the infrastructure",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
-            "isCorrect": false
+            "text": "Use AWS CloudFormation and AWS CodeCommit to deploy and manage the infrastructure",
+            "isCorrect": true
           }
         ]
       },
@@ -3909,22 +3919,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Define an array that includes the environment variables under the environment parameter within the service definition",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Define an array that includes the environment variables under the environment parameter within the task definition",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Define an array that includes the environment variables under the entryPoint parameter within the task definition",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Define an array that includes the environment variables under the entryPoint parameter within the service definition",
             "isCorrect": false
           }
         ]
@@ -3935,22 +3945,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Execute an AWS Lambda function in response to the S3 object creation events that creates an Amazon DynamoDB record for every object with the Customer ID as the partition key and the Server ID as the sort key. Retrieve all the records using the Customer ID and Server ID attributes",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Execute an AWS Lambda function in response to the S3 object creation events that creates an Amazon Redshift record for every object with the Customer ID as the partition key and TS-Server as the sort key. Retrieve all the records using the Customer ID and TS-Server attributes",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Execute an AWS Lambda function in response to the S3 object creation events that creates an Amazon DynamoDB record for every object with the Customer ID as the partition key and TS-Server as the sort key. Retrieve all the records using the Customer ID and TS-Server attributes",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Execute an AWS Lambda function in response to the S3 object creation events that creates an Amazon Redshift record for every object with the Customer ID as the partition key and the Server ID as the sort key. Retrieve all the records using the Customer ID and Server ID attributes",
             "isCorrect": false
           }
         ]
@@ -3961,22 +3971,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Create global secondary indexes on keys that are frequently queried. Add the necessary attributes into the indexes",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Create local secondary indexes on keys that are frequently queried. DynamoDB will fetch needed attributes from the table",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Create DynamoDB global tables to speed up query responses. Use a scan to fetch data from the table",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Create an AWS Auto Scaling policy for the DynamoDB table",
             "isCorrect": false
           }
         ]
