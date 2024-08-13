@@ -13,14 +13,13 @@ export default function Home() {
   }>({});
 
   useEffect(() => {
-    // This will run once when the component mounts (e.g., page load or refresh)
     const data: any = Data.quiz.questions;
     const generatedQuestions = data
       .filter(() => Math.random() < 66 / data.length)
       .slice(0, 65);
 
     setRandomQuestions(generatedQuestions);
-  }, []); // Empty dependency array ensures this runs only on mount
+  }, []);
 
   const handleAnswerClick = (
     questionId: number,
@@ -34,22 +33,44 @@ export default function Home() {
       return;
     }
 
+    const question = randomQuestions.find((q) => q.id === questionId);
+    const isMultiSelect = question.answers.length === 5;
+
+    const currentSelections = {
+      ...selectedAnswers[questionId],
+      [answerId]: isCorrect,
+    };
+
+    const totalCorrectAnswers = question.answers.filter(
+      (a) => a.isCorrect
+    ).length;
+    const correctSelections = Object.values(currentSelections).filter(
+      (value) => value
+    ).length;
+
     setSelectedAnswers((prevState) => ({
       ...prevState,
-      [questionId]: {
-        ...prevState[questionId],
-        [answerId]: isCorrect,
-      },
+      [questionId]: currentSelections,
     }));
 
-    if (isCorrect && !scoredQuestions[questionId]) {
-      setScore((prevScore) => prevScore + 1);
+    // Logic for questions with 5 options
+    if (isMultiSelect) {
+      // If all correct answers are selected, update the score and mark the question as completed
+      if (correctSelections === totalCorrectAnswers) {
+        setScore((prevScore) => prevScore + 1);
+        setScoredQuestions((prevScored) => ({
+          ...prevScored,
+          [questionId]: true,
+        }));
+      }
+    } else {
+      // For questions with fewer than 5 options, mark as complete after one selection
+      setScore((prevScore) => prevScore + (isCorrect ? 1 : 0));
+      setScoredQuestions((prevScored) => ({
+        ...prevScored,
+        [questionId]: true,
+      }));
     }
-
-    setScoredQuestions((prevScored) => ({
-      ...prevScored,
-      [questionId]: true,
-    }));
   };
 
   return (
