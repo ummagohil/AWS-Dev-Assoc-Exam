@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Data from "./data/data.json";
+import JSConfetti from "js-confetti";
 
 export default function Home() {
   const [selectedAnswers, setSelectedAnswers] = useState<{
@@ -20,6 +21,8 @@ export default function Home() {
 
     setRandomQuestions(generatedQuestions);
   }, []);
+
+  const jsConfetti = new JSConfetti();
 
   const handleAnswerClick = (
     questionId: number,
@@ -77,6 +80,13 @@ export default function Home() {
   return (
     <div>
       <h1>Total Score: {score}</h1>
+      <button
+        onClick={() =>
+          jsConfetti.addConfetti({ confettiRadius: 5, confettiNumber: 2000 })
+        }
+      >
+        TEST
+      </button>
       <ol className="list-decimal list-inside">
         {randomQuestions.map((q: any) => (
           <div key={q.id}>
