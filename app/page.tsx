@@ -1,7 +1,11 @@
 "use client";
 import { useState, useEffect } from "react";
 import Data from "./data/data.json";
-import JSConfetti from "js-confetti";
+import dynamic from "next/dynamic";
+
+// Dynamically import JSConfetti so it's only loaded on the client side
+// @ts-ignore
+const JSConfetti = dynamic(() => import("js-confetti"), { ssr: false });
 
 export default function Home() {
   const [selectedAnswers, setSelectedAnswers] = useState<{
@@ -21,6 +25,7 @@ export default function Home() {
 
     setRandomQuestions(generatedQuestions);
   }, []);
+  // @ts-ignore
 
   const jsConfetti = new JSConfetti();
 
@@ -77,7 +82,7 @@ export default function Home() {
     }
   };
 
-  // to do: put js.addConfetti into a useEffect for if the score goes to 65
+  // to do: ensure confetti turns up AFTER the user has completed the test
 
   score >= 47 &&
     jsConfetti.addConfetti({ confettiRadius: 5, confettiNumber: 2000 });
