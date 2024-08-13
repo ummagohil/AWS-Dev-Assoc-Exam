@@ -34,7 +34,8 @@ export default function Home() {
     }
 
     const question = randomQuestions.find((q) => q.id === questionId);
-    const isMultiSelect = question.answers.length === 5;
+    const isMultiSelect =
+      question.answers.length === 5 || question.answers.length === 6;
 
     const currentSelections = {
       ...selectedAnswers[questionId],
