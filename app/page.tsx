@@ -77,16 +77,15 @@ export default function Home() {
     }
   };
 
+  // to do: put js.addConfetti into a useEffect for if the score goes to 65
+
+  score >= 47 &&
+    jsConfetti.addConfetti({ confettiRadius: 5, confettiNumber: 2000 });
+
   return (
     <div>
       <h1>Total Score: {score}</h1>
-      <button
-        onClick={() =>
-          jsConfetti.addConfetti({ confettiRadius: 5, confettiNumber: 2000 })
-        }
-      >
-        TEST
-      </button>
+
       <ol className="list-decimal list-inside">
         {randomQuestions.map((q: any) => (
           <div key={q.id}>
