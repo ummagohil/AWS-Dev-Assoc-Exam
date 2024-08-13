@@ -77,13 +77,13 @@ export default function Home() {
   return (
     <div>
       <h1>Total Score: {score}</h1>
-      <ol>
+      <ol className="list-decimal list-inside">
         {randomQuestions.map((q: any) => (
           <div key={q.id}>
             <br />
             <li>{q.question}</li>
 
-            <ul>
+            <ul className="list-disc list-inside">
               {q.answers.map((a: any) => (
                 <li key={a.id}>
                   <button
