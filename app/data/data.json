@@ -3997,22 +3997,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Deploy the application as an AWS Lambda function and invoke it with an Amazon CloudWatch alarm triggered by an S3 object upload",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Deploy the application as an AWS Lambda function and invoke it with an S3 event notification",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Deploy the application as an AWS Lambda function and invoke it with an Amazon CloudWatch scheduled event",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Deploy the application onto an Amazon EC2 instance and have it poll the S3 bucket for new objects",
             "isCorrect": false
           }
         ]
@@ -4023,22 +4023,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Client-side SSL certificates for authentication",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "API Gateway resource policies",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Cross-origin resource sharing (CORS)",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Usage plans",
             "isCorrect": false
           }
         ]
@@ -4049,22 +4049,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Install MongoDB on the same instance where the application is running",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Deploy Amazon DocumentDB in MongoDB compatibility mode",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Use Amazon API Gateway to translate API calls from MongoDB to Amazon DynamoDB",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Replicate the existing MongoDB workload to Amazon DynamoDB",
             "isCorrect": false
           }
         ]
@@ -4075,22 +4075,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Publish errors to a dedicated Amazon SQS queue",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Create an Amazon CloudWatch Events event trigger based on certain Lambda events",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Report errors through logging statements in Lambda function code",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Set up an Amazon SNS topic that sends logging statements upon failure",
             "isCorrect": false
           }
         ]
@@ -4101,22 +4101,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Set ConsistentRead to true when calling Getltem",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Create a new DynamoDB Accelerator (DAX) table",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Set Consistency to strong when calling UpdateTable",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Use the GetShardIterator command",
             "isCorrect": false
           }
         ]
@@ -4127,22 +4127,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Amazon RDS MySQL stored procedure with AWS Lambda",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "AWS Direct Connect with AWS Lambda",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Amazon Kinesis Data Streams with AWS Lambda",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Amazon EC2 bash script with AWS Lambda",
             "isCorrect": false
           }
         ]
@@ -4153,22 +4153,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Deploy Amazon DynamoDB, move all the data, and point to DynamoDB",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Deploy Amazon ElastiCache for Redis and cache the data for the application",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Deploy Memcached on Amazon EC2 and cache the data for the application",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Deploy Amazon DynamoDB Accelerator (DAX) on Amazon RDS to improve cache performance",
             "isCorrect": false
           }
         ]
@@ -4179,22 +4179,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Read 10; write 2",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Read 30; write 40",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Use on-demand scaling",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Read 300; write 400",
             "isCorrect": false
           }
         ]
@@ -4205,22 +4205,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Provision a Redis cluster in Amazon ElastiCache and save the session data in the cluster",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Create a session table in Amazon Redshift and save the session data in the database table",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Enable session stickiness in the existing Network Load Balancer and manage the session data in the container",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Use an Amazon S3 bucket as data store and save the session data in the bucket",
             "isCorrect": false
           }
         ]
@@ -4231,22 +4231,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Add a read replica instance",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Migrate to a Memcached cluster",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Migrate to an Amazon Elasticsearch Service cluster",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Vertically scale the ElastiCache instance",
             "isCorrect": false
           }
         ]
@@ -4257,22 +4257,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "AWS X-Ray",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "VPC Flow Logs",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Amazon GuardDuty",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Amazon Macie",
             "isCorrect": false
           }
         ]
@@ -4283,22 +4283,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Create a separate CodePipeline pipeline to run unit tests",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Update the AWS CodeBuild specification to include a phase for running unit tests",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Install the AWS CodeDeploy agent on an Amazon EC2 instance to run unit tests",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Create a testing branch in AWS CodeCommit to run unit tests",
             "isCorrect": false
           }
         ]
@@ -4309,22 +4309,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Amazon DynamoDB",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Amazon S3",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Amazon RDS (with a MySQL engine)",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Amazon ElastiCache",
             "isCorrect": false
           }
         ]
@@ -4335,23 +4335,23 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Create a blank user ID in a user pool, add to the user group, and grant access to AWS resources",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Create a new identity pool, enable access to authenticated identities, and grant access to AWS resources",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Create a new user pool, enable access to authenticated identifies, and grant access to AWS resources",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
-            "isCorrect": false
+            "text": "Create a new user pool, disable authentication access, and grant access to AWS resources",
+            "isCorrect": true
           }
         ]
       },
@@ -4361,22 +4361,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "AWS CodeBuild",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Amazon S3",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "AWS CodeCommit",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "AWS Cloud9",
             "isCorrect": false
           }
         ]
@@ -4387,22 +4387,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Call the ChangeMessageVisibility API for the queue and set MaxNumberOfMessages to a value greater than the default of 1",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Call the AddPermission API to set MaxNumberOfMessages for the ReceiveMessage action to a value greater than the default of 1",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Call the ReceiveMessage API to set MaxNumberOfMessages to a value greater than the default of 1",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Call the SetQueueAttributes API for the queue and set MaxNumberOfMessages to a value greater than the default of 1",
             "isCorrect": false
           }
         ]
@@ -4413,22 +4413,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "A Lambda function cannot be registered as a target for an ALB",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "A Lambda function can be registered with an ALB using AWS Management Console only",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "The permissions to invoke the Lambda function are missing",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Cross-zone is not enabled on the ALB",
             "isCorrect": false
           }
         ]
@@ -4439,23 +4439,23 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Enable throttling limits for each method in Amazon API Gateway",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Create a usage plan for each user and request API keys to access the APIs",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Enable API rate limiting in Amazon Cognito for each user.",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
-            "isCorrect": false
+            "text": "Enable default throttling limits for each stage after deploying the APIs",
+            "isCorrect": true
           }
         ]
       },
@@ -4465,22 +4465,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Use the Ref function to import the VPC into the application stack from the infrastructure template",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Use the export flag in the infrastructure template, and then use the Fn::ImportValue function in the application template",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Use the DependsOn attribute to specify that the application instance depends on the VPC in the application template",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Use the Fn::GetAtt function to include the attribute of the VPC in the application template",
             "isCorrect": false
           }
         ]
@@ -4491,22 +4491,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "AWS AppSync",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Amazon Cognito identity pools",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Amazon Cognito user pools",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Amazon Lambda@Edge",
             "isCorrect": false
           }
         ]
@@ -4517,22 +4517,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Sending custom metrics using the CLI is not supported",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "The Developer needs to use the put-metric-data command",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "The Developer must use a unified CloudWatch agent to publish custom metrics",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "The code is not running on an Amazon EC2 instance",
             "isCorrect": false
           }
         ]
@@ -4543,22 +4543,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Use the Amazon CloudWatch metrics reported by default for all EC2 instances. View each value from the CloudWatch console",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Develop the application to store each value in a file on Amazon S3 every minute with the timestamp as the name",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Publish each generated value as a custom metric to Amazon CloudWatch using available AWS SDKs",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Store each value as a variable and add the variable to the list of EC2 metrics that should be reported to the Amazon CloudWatch console",
             "isCorrect": false
           }
         ]
@@ -4569,23 +4569,23 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Use AWS SES to send an email to approvers when their action is required. Develop a simple application that allows approvers to accept or reject a build. Invoke an AWS Lambda function to advance the pipeline when a build is accepted",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "If approved, add an approved tag when pushing changes to the CodeCommit repository. CodePipeline will proceed to build and deploy approved commits without interruption",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Add an approval step to CodeCommit. Commits will not be saved until approved",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
-            "isCorrect": false
+            "text": "Add an approval action to the pipeline. Configure the approval action to publish to an Amazon SNS topic when approval is required. The pipeline execution will stop and wait for an approval",
+            "isCorrect": true
           }
         ]
       },
@@ -4595,22 +4595,27 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "A Lambda@Edge function",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "An Amazon API Gateway with a Lambda function",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "An exposed GET method in an Amazon API Gateway",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "An exposed GET method in the Lambda function",
+            "isCorrect": false
+          },
+          {
+            "id": "5",
+            "text": "An exposed GET method in Amazon Route 53",
             "isCorrect": false
           }
         ]
@@ -4621,22 +4626,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Store the connection string as a secret in AWS Secrets Manager",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Store the connection string in an IAM user account",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Store the connection string in AWS KMS",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Store the connection string as a Lambda layer",
             "isCorrect": false
           }
         ]
@@ -4647,23 +4652,23 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Enable AWS CloudTrail logging for the S3 bucket-level action and create a lifecycle policy to move the data from the log bucket to Amazon S3 Glacier in 90 days",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Enable S3 server access logging and create a lifecycle policy to expire the data in 90 days",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Enable AWS CloudTrail logging for the S3 bucket-level action and create a lifecycle policy to expire the data in 90 days",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
-            "isCorrect": false
+            "text": "Enable S3 server access logging and create a lifecycle policy to move the data to Amazon S3 Glacier in 90 days",
+            "isCorrect": true
           }
         ]
       },
@@ -4673,22 +4678,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "SSE with Amazon S3 managed keys (SSE-S3)",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "SSE with AWS KMS managed keys (SSE-KMS)",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "SSE with AWS Secrets Manager",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "SSE with customer-provided encryption keys",
             "isCorrect": false
           }
         ]
@@ -4699,22 +4704,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Use Amazon EBS and configure the application AMI to use a snapshot of the same EBS instance on boot",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Use Amazon S3 and rearchitect the application so all uploads are placed in S3",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Use instance storage and share it between instances launched from the same Amazon Machine Image (AMI)",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Use Amazon EBS and file synchronization software to achieve eventual consistency among the Auto Scaling group",
             "isCorrect": false
           }
         ]
@@ -4725,22 +4730,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Enable cross-origin resource sharing (CORS) on the S3 bucket",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Enable cross-origin resource sharing (CORS) for the method in API Gateway",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Add the Access-Control-Request-Method header to the request",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Add the Access-Control-Request-Headers header to the request",
             "isCorrect": false
           }
         ]
@@ -4751,22 +4756,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Implement server-side encryption using customer-provided encryption keys (SSE-C)",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Implement server-side encryption by using a client-side master key",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Implement client-side encryption using an AWS KMS managed customer master key (CMK)",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Implement client-side encryption using Amazon S3 managed keys",
             "isCorrect": false
           }
         ]
@@ -4777,23 +4782,28 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Use Auto Scaling to scale the stream for better performance",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Increase the delay between the GetRecords call and the PutRecords call",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Increase the number of shards in the data stream",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Specify a shard iterator using the ShardIterator parameter",
             "isCorrect": false
+          },
+          {
+            "id": "5",
+            "text": "Implement exponential backoff on the GetRecords call and the PutRecords call",
+            "isCorrect": true
           }
         ]
       },
@@ -4803,23 +4813,23 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Use the CloudWatch Logs console and enable the encrypt feature on the log group",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Use the AWS CLI create-log-group command and specify the key Amazon Resource Name (ARN)",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Use the KMS console and associate the CMK with the log group",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
-            "isCorrect": false
+            "text": "Use the AWS CLI associate-kms-key command and specify the key Amazon Resource Name (ARN)",
+            "isCorrect": true
           }
         ]
       },
@@ -4829,22 +4839,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Create a user access key for each EC2 instance with read-only access to DynamoDB. Place the keys in the code. Redeploy the code as keys rotate",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Use an IAM role with an AmazonDynamoDBReadOnlyAccess policy applied to the EC2 instances",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Run all code with only AWS account root user access keys to ensure maximum access to services",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Use an IAM role with Administrator access applied to the EC2 instance",
             "isCorrect": false
           }
         ]
@@ -4855,22 +4865,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Use rolling updates instead of a blue/green deployment",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Externalize the user sessions to Amazon ElastiCache",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Turn on sticky sessions in the Application Load Balancer",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Use multicast to replicate session information",
             "isCorrect": false
           }
         ]
@@ -4881,22 +4891,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Create an event with Amazon CloudWatch Events that will monitor the S3 bucket and then insert the records into DynamoDB",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Configure an S3 event to invoke a Lambda function that inserts records into DynamoDB",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Create a Lambda function that will poll the S3 bucket and then insert the records into DynamoDB",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Create a cron job that will run at a scheduled time and insert the records into DynamoDB",
             "isCorrect": false
           }
         ]
@@ -4907,22 +4917,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "The last known good deployment is automatically restored using the snapshot stored in Amazon S3",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "CodeDeploy switches the Amazon Route 53 alias records back to the known good green deployment and terminates the failed blue deployment",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "A new deployment of the last known version of the application is deployed with a new deployment ID",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "AWS CodePipeline promotes the most recent deployment with a SUCCEEDED status to production",
             "isCorrect": false
           }
         ]
@@ -4933,22 +4943,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Create an IAM role and apply it to the assets bucket for the code bucket to be granted access",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Edit the bucket policy of the assets bucket to allow access from the code bucket",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Edit the bucket policy of the assets bucket to open access to all principals",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Change the code bucket to use AWS Lambda functions instead of static website hosting",
             "isCorrect": false
           }
         ]
@@ -4959,22 +4969,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Create a trigger that invokes the Lambda function from the Lambda console by selecting CodePipeline as the event source",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Create an event trigger and specify the Lambda function from the CodePipeline console",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Create an Amazon CloudWatch alarm that monitors status changes in Code Pipeline and triggers the Lambda function",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Create an Amazon CloudWatch Events rule that uses CodePipeline as an event source",
             "isCorrect": false
           }
         ]
@@ -4985,22 +4995,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "1. Build the SAM template in Amazon EC2. 2. Package the SAM template to Amazon EBS storage. 3. Deploy the SAM template from Amazon EBS",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "1. Build the SAM template locally. 2. Package the SAM template onto Amazon S3. 3. Deploy the SAM template from Amazon S3",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "1. Build the SAM template locally. 2. Deploy the SAM template from Amazon S3. 3. Package the SAM template for use",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "1. Build the SAM template locally. 2. Package the SAM template from AWS CodeCommit. 3. Deploy the SAM template to CodeCommit",
             "isCorrect": false
           }
         ]
@@ -5011,22 +5021,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Create an IAM user with read-only permissions for the S3 bucket. Temporarily store the user credentials in the Amazon EBS volume of the EC2 instance",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Create an IAM user with read-only permissions for the S3 bucket. Temporarily store the user credentials in the user data of the EC2 instance",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Create an EC2 service role with read-only permissions for the S3 bucket. Attach the role to the EC2 instance",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Create an S3 service role with read-only permissions for the S3 bucket. Attach the role to the EC2 instance",
             "isCorrect": false
           }
         ]
@@ -5037,22 +5047,27 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Store the source code in an Amazon S3 bucket. Configure AWS CodePipeline to start whenever a file in the bucket changes",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Store the source code in an encrypted Amazon EBS volume. Configure AWS CodePipeline to start whenever a file in the volume changes",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Store the source code in an AWS CodeCommit repository. Configure AWS CodePipeline to start whenever a change is committed to the repository",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Store the source code in an Amazon S3 bucket. Configure AWS CodePipeline to start every 15 minutes",
+            "isCorrect": false
+          },
+          {
+            "id": "5",
+            "text": "Store the source code in an Amazon EC2 instance's ephemeral storage. Configure the instance to start AWS CodePipeline whenever there are changes to the source code",
             "isCorrect": false
           }
         ]
@@ -5063,22 +5078,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Add the messages to an Amazon SQS queue. Set up and Amazon EC2 instance to poll the queue and process messages as they arrive",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Add the messages to an Amazon SQS queue. Set up Amazon EC2 instances in an Auto Scaling group to poll the queue and process the messages as they arrive",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Create a support ticket to increase the Lambda timeout to 60 minutes to allow for increased processing time",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Change the application to directly insert the body of the message into an Amazon RDS database",
             "isCorrect": false
           }
         ]
@@ -5089,23 +5104,23 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Instead of using Node.js, rewrite the Lambda function using Python",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Instead of packaging the libraries in the ZIP file with the function, move them to a Lambda layer and use the layer with the function",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Allocate the maximum available CPU units to the function",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
-            "isCorrect": false
+            "text": "Increase the available memory to the function",
+            "isCorrect": true
           }
         ]
       },
@@ -5115,22 +5130,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Redeploy the application on Amazon EC2 so the Lambda function can resolve dependencies",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Migrate DynamoDB to Amazon RDS and redeploy the Lambda function",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Roll back the Lambda function to the previous version",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Deploy the latest Lambda function in a different Region",
             "isCorrect": false
           }
         ]
@@ -5141,22 +5156,27 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Amazon DynamoDB",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Amazon Cognito",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Amazon ElastiCache",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Amazon EBS",
+            "isCorrect": false
+          },
+          {
+            "id": "5",
+            "text": "Amazon SQS",
             "isCorrect": false
           }
         ]
@@ -5167,22 +5187,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Install an AWS SDK on the on-premises server to automatically send logs to CloudWatch",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Download the CloudWatch agent to the on-premises server. Configure the agent to use IAM user credentials with permissions for CloudWatch",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Upload log files from the on-premises server to Amazon S3 and have CloudWatch read the files",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Upload log files from the on-premises server to an Amazon EC2 instance and have the instance forward the logs to CloudWatch",
             "isCorrect": false
           }
         ]
@@ -5193,22 +5213,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Create an Amazon Cognito identity pool, configure the Amazon Cognito Authorizer in API Gateway, and use the temporary credentials generated by the identity pool",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Create and maintain a database record for each user with a corresponding token and use an AWS Lambda authorizer in API Gateway",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Create an Amazon Cognito user pool, configure the Cognito Authorizer in API Gateway, and use the identity or access token",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Create an IAM user for each API user, attach an invoke permissions policy to the API, and use an IAM authorizer in API Gateway",
             "isCorrect": false
           }
         ]
@@ -5219,23 +5239,28 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Add the Spring Framework to the project and enable dependency injection",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Reduce the deployment package by including only needed modules from the AWS SDK for Java",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Increase the memory allocation setting for the Lambda function",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Increase the timeout setting for the Lambda function",
             "isCorrect": false
+          },
+          {
+            "id": "5",
+            "text": "Change the Lambda invocation mode from synchronous to asynchronous",
+            "isCorrect": true
           }
         ]
       },
@@ -5245,22 +5270,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "VPN logs",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "VPN logs",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "VPC Flow Logs",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "AWS CloudTrail logs.",
             "isCorrect": false
           }
         ]
@@ -5271,22 +5296,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Update the policy of the IAM user to allow the s3 Encrypt action",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Update the bucket policy of the S3 bucket to allow the IAM user to upload objects",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Update the policy of the IAM user to allow the kms:GenerateDataKey action",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Update the ACL of the S3 bucket to allow the IAM user to upload objects",
             "isCorrect": false
           }
         ]
