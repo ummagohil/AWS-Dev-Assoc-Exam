@@ -6727,22 +6727,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "None, Simple Storage Service objects are limited to 5 GB",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Use the multi-part upload API for this object",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Use the large object upload API for this object",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Contact support to increase your object size limit",
             "isCorrect": false
           }
         ]
@@ -6753,22 +6753,32 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Auto scaling groups",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Route 53 hosted zones",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Elastic Load Balancers",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "RDS Instances",
+            "isCorrect": true
+          },
+          {
+            "id": "5",
+            "text": "Elastic IP addresses",
+            "isCorrect": false
+          },
+          {
+            "id": "6",
+            "text": "SQS Queues",
             "isCorrect": false
           }
         ]
@@ -6779,22 +6789,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Create an IAM user with access credentials that are distributed with the mobile app to sign the requests",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Distribute the AWS root account access credentials with the mobile app to sign the requests",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Request temporary security credentials using web identity federation to sign the request",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Establish cross account access between the mobile app and the DynamoDB table to sign the requests",
             "isCorrect": false
           }
         ]
@@ -6805,22 +6815,27 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Perl",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "PHP",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Pascal",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Java",
+            "isCorrect": true
+          },
+          {
+            "id": "5",
+            "text": "SQL",
             "isCorrect": false
           }
         ]
@@ -6831,22 +6846,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "1 write capacity unit",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "10 write capacity unit",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "60 write capacity units",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "600 write capacity units",
             "isCorrect": false
           }
         ]
@@ -6857,23 +6872,23 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "5xx HTTP response code",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "200 HTTP response code",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "306 HTTP response code",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
-            "isCorrect": false
+            "text": "4xx HTTP response code",
+            "isCorrect": true
           }
         ]
       },
@@ -6883,22 +6898,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Set the imaging queue visibility Timeout attribute to 20 seconds",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Set the Imaging queue ReceiveMessageWaitTimeSeconds attribute to 20 seconds",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Set the imaging queue MessageRetentionPeriod attribute to 20 seconds",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Set the DelaySeconds parameter of a message to 20 seconds",
             "isCorrect": false
           }
         ]
@@ -6909,22 +6924,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "www.myawsbucket.ap-northeast-1.amazonaws.com",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "myawsbucket.s3-website-ap-northeast-1.amazonaws.com",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "myawsbucket.amazonaws.com",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "myawsbucket.tokyo.amazonaws.com",
             "isCorrect": false
           }
         ]
@@ -6935,22 +6950,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Retain the items in a single table",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Delete items individually over a 24 hour period",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Delete the table and create a new table per hour",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Create a new table per hour",
             "isCorrect": false
           }
         ]
@@ -6961,23 +6976,23 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Use instance memory to save session state",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Use instance storage to save session state",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Use EBS to save session state",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
-            "isCorrect": false
+            "text": "Use ElastiCache to save session state",
+            "isCorrect": true
           }
         ]
       },
@@ -6987,22 +7002,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Store photos on an EBS volume of the web server",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Remove public read access and use signed URLs with expiry dates",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Use CloudFront distributions for static content",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Block the IPs of the offending websites in Security Groups",
             "isCorrect": false
           }
         ]
@@ -7013,22 +7028,27 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "DynamoDB uses a pessimistic locking model",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "DynamoDB uses optimistic concurrency contro",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "DynamoDB uses conditional writes for consistency",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "DynamoDB restricts item access during reads",
+            "isCorrect": false
+          },
+          {
+            "id": "5",
+            "text": "DynamoDB restricts item access during writes",
             "isCorrect": false
           }
         ]
@@ -7039,23 +7059,23 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Bulk upload the device tokens contained in a CSV file via the AWS Management Console",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Let the push notification service (e.g. Amazon Device Messaging) handle the registration",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Implement a token vending service to handle the registration",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
-            "isCorrect": false
+            "text": "Call the CreatePlatformEndPoint API function to register multiple device tokens",
+            "isCorrect": true
           }
         ]
       },
@@ -7065,22 +7085,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "You haven't provisioned enough DynamoDB storage instances",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "You're exceeding your capacity on a particular Range Key",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "You're exceeding your capacity on a particular Hash Key",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "You're exceeding your capacity on a particular Sort Key",
             "isCorrect": false
           }
         ]
@@ -7091,22 +7111,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "instancelD_log-HH-DD-MM-YYYY",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "instancelDJog-YYYY-MM-DD-HH",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "HH-DD-MM-YYYY-log_instancelD",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "YYYY-MM-DD-HH-logJnstancelD",
             "isCorrect": false
           }
         ]
@@ -7117,23 +7137,23 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Messages will be delivered exactly once and messages will be delivered in First in, First out order",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Messages will be delivered exactly once and message delivery order is indeterminate",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Messages will be delivered one or more times and messages will be delivered in First in, First out order",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
-            "isCorrect": false
+            "text": "Messages will be delivered one or more times and message delivery order is indeterminate",
+            "isCorrect": true
           }
         ]
       },
@@ -7143,23 +7163,28 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "The application authenticates against LDAP. The application then calls the IAM Security Service to login to IAM using the LDAP credentials. The application can use the 1AM temporary credentials to access the appropriate S3 bucket.",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "The application authenticates against LDAP, and retrieves the name of an IAM role associated with the user. The application then calls the IAM Security Token Service to assume that IAM Role. The application can use the temporary credentials to access the appropriate S3 bucket",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "The application authenticates against IAM Security Token Service using the LDAP credentials. The application uses those temporary AWS security credentials to access the appropriate S3 bucket",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
-            "isCorrect": false
+            "text": "Develop an identity broker which authenticates against LDAP, and then calls IAM Security Token Service to get IAM federated user credentials. The application calls the identity broker to get IAM federated user credentials with access to the appropriate S3 bucket",
+            "isCorrect": true
+          },
+          {
+            "id": "5",
+            "text": "Develop an identity broker which authenticates against IAM Security Token Service to assume an IAM Role to get temporary AWS security credentials. The application calls the identity broker to get AWS temporary security credentials with access to the appropriate S3 bucket",
+            "isCorrect": true
           }
         ]
       },
@@ -7169,22 +7194,27 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Upload an html page named welcome.html to their S3 bucket",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Create a welcome subfolder in their S3 bucket",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Set the Index Document property to welcome.html",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Move the index.html page to a welcome subfolder",
+            "isCorrect": false
+          },
+          {
+            "id": "5",
+            "text": "Set the Error Document property to welcome.html",
             "isCorrect": false
           }
         ]
@@ -7195,22 +7225,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Triple DES",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Advanced Encryption Standard",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Blowfish",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "RC5",
             "isCorrect": false
           }
         ]
@@ -7221,22 +7251,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Add annotations to the segment document and the code",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Add metadata to the segment document and the code",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Configure the necessary X-Ray environment variables",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Install required plugins for the appropriate AWS SDK",
             "isCorrect": false
           }
         ]
@@ -7247,22 +7277,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "1. Update the application code in the existing deployment. 2. Select a new load balancer type before running the deployment. 3. Deploy the new version of the application code to the environment",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "1. Create a new environment with the same configurations except for the load balancer type. 2. Deploy the same application version as used in the original environment. 3. Run the swap-environment-cnames action",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "1. Clone the existing environment, changing the associated load balancer type. 2. Deploy the same application version as used in the original environment. 3. Run the swap-environment-cnames action",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "1. Edit the environment definitions in the existing deployment. 2. Change the associated load balancer type according to the requirements. 3. Rebuild the environment with the new load balancer type",
             "isCorrect": false
           }
         ]
@@ -7273,23 +7303,23 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "AWS CodePipeline",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Amazon S3",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "AWS Code Build",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
-            "isCorrect": false
+            "text": "AWS CodeCommit",
+            "isCorrect": true
           }
         ]
       },
@@ -7299,23 +7329,23 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "AWS CodePipeline",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "AWS CodeBuild",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "AWS Elastic Beanstalk",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
-            "isCorrect": false
+            "text": "AWS CodeDeploy",
+            "isCorrect": true
           }
         ]
       },
@@ -7325,23 +7355,23 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Implement dead-letter queues to capture invocation errors",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Add an event source from Amazon API Gateway to the Lambda function",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Implement error handling within the application code",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
-            "isCorrect": false
+            "text": "Contact AWS Support to increase the concurrent execution limits",
+            "isCorrect": true
           }
         ]
       },
@@ -7351,22 +7381,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Create an Amazon RDS instance, then implement session handling at the application level to leverage a database inside the RDS database instance for session data storage",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Implement a shared file system solution across the underlying Amazon EC2 instances, then implement session handling at the application level to leverage the shared file system for session data storage",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Create an Amazon ElastiCache Memcached cluster, then implement session handling at the application level to leverage the cluster for session data storage",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Create an Amazon DynamoDB table, then implement session handling at the application level to leverage the table for session data storage",
             "isCorrect": false
           }
         ]
@@ -7377,22 +7407,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "The GSI write capacity units are underprovisioned",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "There are not enough read capacity units on the primary table",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Amazon DynamoDB Streams is not enabled on the table",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "A large write operation is being performed against another table",
             "isCorrect": false
           }
         ]
@@ -7403,22 +7433,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Concurrent writes",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Conditional writes",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Atomic writes",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Batch writes",
             "isCorrect": false
           }
         ]
@@ -7429,22 +7459,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Change the StreamViewType parameter value to NEW_AND_OLD_IMAGES for the DynamoDB table",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Configure event source mapping for the Lambda function",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Map an Amazon SNS topic to the DynamoDB streams",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Increase the maximum execution time (timeout) setting of the Lambda function",
             "isCorrect": false
           }
         ]
@@ -7455,22 +7485,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Create a high-resolution custom Amazon CloudWatch metric for user activity data, then publish data every 30 seconds",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Create a high-resolution custom Amazon CloudWatch metric for user activity data, then publish data every 5 seconds",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Create a standard-resolution custom Amazon CloudWatch metric for user activity data, then publish data every 30 seconds",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Create a standard-resolution custom Amazon CloudWatch metric for user activity data, then publish data every 5 seconds",
             "isCorrect": false
           }
         ]
@@ -7481,48 +7511,48 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Send the messages to an Amazon SQS queue, then process the messages by using a fleet of Amazon EC2 instances",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Use the Amazon S3 API to write messages to an S3 bucket, then process the messages by using Amazon Redshift",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Use AWS Data Pipeline to automate the movement and transformation of data",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
-            "isCorrect": false
+            "text": "Use Amazon Kinesis Data Streams with Kinesis Client Library to ingest and deliver messages",
+            "isCorrect": true
           }
         ]
       },
       {
         "id": 281,
-        "question": "A Developer accesses AWS CodeCommit over SSH. The SSH keys configured to access AWS CodeCommit are tied to a user with the following permissions. The Developer needs to create/delete branches. Which specific IAM permissions need to be added, based on the principle of least privilege?",
+        "question": "[to do: add image] A Developer accesses AWS CodeCommit over SSH. The SSH keys configured to access AWS CodeCommit are tied to a user with the following permissions. The Developer needs to create/delete branches. Which specific IAM permissions need to be added, based on the principle of least privilege?",
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "'codecommit:CreateBranch' 'codecommit:DeleteBranch'",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "'codecommit:Put*'",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "'codecommit:Update*'",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "'codecommit:*'",
             "isCorrect": false
           }
         ]
@@ -7533,22 +7563,27 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "AWS Certificate Manager (ACM)",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "AWS Systems Manager Parameter Store",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "AWS Trusted Advisor",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "AWS KMS",
+            "isCorrect": true
+          },
+          {
+            "id": "5",
+            "text": "Amazon GuardDuty",
             "isCorrect": false
           }
         ]
@@ -7559,22 +7594,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "dockerrun.aws.json",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "buildspec.yml",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "appspec.yml",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "ebextensions.config",
             "isCorrect": false
           }
         ]
@@ -7585,23 +7620,23 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Invoke the Encrypt API passing the plaintext data that must be encrypted, then reference the customer managed key ARN in the KeyId parameter",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Invoke the GenerateRandom API to get a data encryption key, then use the data encryption key to encrypt the data",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Invoke the GenerateDataKey API to retrieve the encrypted version of the data encryption key to encrypt the data",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
-            "isCorrect": false
+            "text": "Invoke the GenerateDataKey API to retrieve the plaintext version of the data encryption key to encrypt the data",
+            "isCorrect": true
           }
         ]
       },
@@ -7611,22 +7646,27 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "CacheHitCount",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "IntegrationLatency",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "CacheMissCount",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Latency",
+            "isCorrect": true
+          },
+          {
+            "id": "5",
+            "text": "Count",
             "isCorrect": false
           }
         ]
@@ -7637,22 +7677,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Use Amazon CloudFront with signed URLs for Amazon S3",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Create a dedicated Amazon CloudFront Distribution for each customer",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Use Amazon CloudFront with AWS Lambda@Edge",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Use Amazon API Gateway and AWS Lambda to control access to an S3 bucket",
             "isCorrect": false
           }
         ]
@@ -7663,22 +7703,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Add exponential backoff to the application logic",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Use Amazon SQS as an API message bus",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Pass API calls through Amazon API Gateway",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Send the items to DynamoDB through Amazon Kinesis Data Firehose",
             "isCorrect": false
           }
         ]
@@ -7689,22 +7729,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Store the session state in Amazon ElastiCache",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Store the session state in Amazon CloudFront",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Store the session state in Amazon S3",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Enable session stickiness using elastic load balancers",
             "isCorrect": false
           }
         ]
@@ -7715,22 +7755,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "CloudFormation serverless intrinsic functions",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "AWS serverless express",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "An AWS serverless application model",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "A CloudFormation serverless plugin",
             "isCorrect": false
           }
         ]
@@ -7741,23 +7781,28 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Use pessimistic concurrency on Amazon DynamoDB",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Use Amazon CloudFront with an Auto Scaling group",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Use Amazon CloudFront with an AWS Web Application Firewall",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
-            "isCorrect": false
+            "text": "Store session state data in an Amazon DynamoDB table",
+            "isCorrect": true
+          },
+          {
+            "id": "5",
+            "text": "Use an ELB with an Auto Scaling group",
+            "isCorrect": true
           }
         ]
       },
@@ -7767,22 +7812,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Add logging statements to the Lambda functions, then use Amazon CloudWatch to view the logs",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Use AWS Cloud Trail and then examine the logs",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Use AWS X-Ray, then examine the segments and errors",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Run Amazon Inspector agents and then analyze performance",
             "isCorrect": false
           }
         ]
@@ -7793,22 +7838,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "A setup of the Amazon CloudWatch interface VPC endpoint is required for filtering the CloudWatch Logs in the VPC",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "CloudWatch Logs only publishes metric data for events that happen after the filter is created",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "The log group for CloudWatch Logs should be first streamed to Amazon Elasticsearch Service before metric filtering returns the results",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Metric data points for logs groups can be filtered only after they are exported to an Amazon S3 bucket",
             "isCorrect": false
           }
         ]
@@ -7819,22 +7864,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Conditions",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Globals",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Transform",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Properties",
             "isCorrect": false
           }
         ]
@@ -7845,22 +7890,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Amazon RDS Multi-AZ",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Amazon SQS",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Amazon ElastiCache",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Amazon RDS read replica",
             "isCorrect": false
           }
         ]
@@ -7871,22 +7916,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Manually reduce the concurrent execution limit at the account level",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Add another API Gateway stage for /MyAPI, and shard the requests",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Configure the second Lambda function's concurrency execution limit",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Reduce the throttling limits in the API Gateway /MyAPI endpoint",
             "isCorrect": false
           }
         ]
@@ -7897,48 +7942,48 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "An Amazon ElastiCache for Redis cluster",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "A second Amazon EBS volume",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "The web server's primary disk",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "An Amazon EC2 instance dedicated to session data",
             "isCorrect": false
           }
         ]
       },
       {
         "id": 297,
-        "question": "A Developer created configuration specifications for an AWS Elastic Beanstalk application in a file named healthcheckurl.yaml in the .ebextensions/directory of their application source bundle. The file contains the following: After the application launches, the health check is not being run on the correct path, even though it is valid. What can be done to correct this configuration file?",
+        "question": "[to do: add image]A Developer created configuration specifications for an AWS Elastic Beanstalk application in a file named healthcheckurl.yaml in the .ebextensions/directory of their application source bundle. The file contains the following: After the application launches, the health check is not being run on the correct path, even though it is valid. What can be done to correct this configuration file?",
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Convert the file to JSON format",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Rename the file to a .config extension",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Change the configuration section from options_settings to resources",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Change the namespace of the option settings to a custom namespace",
             "isCorrect": false
           }
         ]
@@ -7949,23 +7994,23 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Run on a larger instance size with more compute capacity",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Increase the maximum execution time",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Specify a larger compute capacity when calling the Lambda function",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
-            "isCorrect": false
+            "text": "Increase the allocated memory for the Lambda function",
+            "isCorrect": true
           }
         ]
       },
@@ -7975,22 +8020,27 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Implement the user login page as an asynchronous Lambda function",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Use Amazon ElastiCache for MemCached to cache user data",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Use Amazon Application Load Balancer to load balance the traffic to the website",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Call the database asynchronously so the code can continue executing",
+            "isCorrect": true
+          },
+          {
+            "id": "5",
+            "text": "Batch login requests from hundreds of users together as a single read request to the database",
             "isCorrect": false
           }
         ]
@@ -8001,22 +8051,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Use Cognito federated identities",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Use a Cognito user pool",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Use Cognito Sync",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Use Cognito events",
             "isCorrect": false
           }
         ]
