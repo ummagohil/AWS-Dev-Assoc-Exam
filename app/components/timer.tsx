@@ -45,21 +45,34 @@ export default function Timer() {
   };
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>Countdown Timer</h1>
+    <div style={{ textAlign: "center" }}>
       <div
-        style={{ fontSize: "48px", fontWeight: "bold", marginBottom: "20px" }}
+        className="text-blue-500"
+        style={{ fontSize: "60px", fontWeight: "bold" }}
       >
         {formatTime(timeLeft)}
       </div>
       <div>
-        <button onClick={startTimer} disabled={isRunning}>
+        <button
+          className="text-blue-500 bg-white rounded-xl p-2 m-2"
+          onClick={startTimer}
+          disabled={isRunning}
+        >
           Start
         </button>
-        <button onClick={stopTimer} disabled={!isRunning}>
+        <button
+          className="text-blue-500 bg-white rounded-xl p-2 m-2"
+          onClick={stopTimer}
+          disabled={!isRunning}
+        >
           Pause
         </button>
-        <button onClick={clearTimer}>Clear</button>
+        <button
+          className="text-blue-500 bg-white rounded-xl p-2 m-2"
+          onClick={clearTimer}
+        >
+          Clear
+        </button>
       </div>
     </div>
   );
