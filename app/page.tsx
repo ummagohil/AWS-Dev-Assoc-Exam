@@ -89,11 +89,18 @@ export default function Home() {
   score >= 47 &&
     jsConfetti.addConfetti({ confettiRadius: 5, confettiNumber: 2000 });
 
+  // hoist state from timer here and then reset the score to zero if the user clicks start/clear
+
   return (
-    <div>
+    <div className=" h-full w-full bg-red-100 bg-[linear-gradient(to_right,red_1px,transparent_1px),linear-gradient(to_bottom,red_1px,transparent_1px)] bg-[size:50px_50px]">
+      <div className="bg-white w-full p-12 text-center">
+        <h1 className="text-outline-black text-8xl font-bold">
+          AWS Developer Associate Exam Practice
+        </h1>
+      </div>
       <h1>Total Score: {score}</h1>
       <Timer />
-      <ol className="list-decimal list-inside">
+      <ol className="list-decimal list-inside bg-white p-8 mt-4 mx-24 rounded-xl">
         {randomQuestions.map((q: any) => (
           <div key={q.id}>
             <br />

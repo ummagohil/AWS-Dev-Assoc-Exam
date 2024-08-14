@@ -34,3 +34,8 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.text-outline-black {
+  @apply text-transparent;
+  -webkit-text-stroke: 1px blue;
+}
