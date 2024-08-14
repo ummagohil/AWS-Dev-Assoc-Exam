@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Data from "./data/data.json";
 import dynamic from "next/dynamic";
-
+import Timer from "./components/timer";
 // Dynamically import JSConfetti so it's only loaded on the client side
 // @ts-ignore
 const JSConfetti = dynamic(() => import("js-confetti"), { ssr: false });
@@ -85,13 +85,14 @@ export default function Home() {
   // to do: ensure confetti turns up AFTER the user has completed the test
   // to do: figure out what to do about code blocks (add to json or separate file with specified questions related to code)
 
+  // add a tracker of what question the user is one and then fire this event below
   score >= 47 &&
     jsConfetti.addConfetti({ confettiRadius: 5, confettiNumber: 2000 });
 
   return (
     <div>
       <h1>Total Score: {score}</h1>
-
+      <Timer />
       <ol className="list-decimal list-inside">
         {randomQuestions.map((q: any) => (
           <div key={q.id}>
