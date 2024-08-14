@@ -30,8 +30,6 @@ export default function Home() {
     setRandomQuestions(generatedQuestions);
   }, []);
 
-  const jsConfetti = new JSConfetti();
-
   const handleAnswerClick = (
     questionId: number,
     answerId: string,
@@ -61,6 +59,8 @@ export default function Home() {
     ).length;
 
     if (correctSelections) {
+      const jsConfetti = new JSConfetti();
+
       jsConfetti.addConfetti({ confettiRadius: 5, confettiNumber: 2000 });
     }
 
@@ -119,7 +119,7 @@ export default function Home() {
             className="text-blue-500"
             style={{ fontSize: "40px", fontWeight: "bold" }}
           >
-            Score: {score}/ 65
+            Score: {score}/65
           </h1>
         </div>
         <div>
