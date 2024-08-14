@@ -58,6 +58,10 @@ export default function Home() {
       (value) => value
     ).length;
 
+    if (correctSelections) {
+      jsConfetti.addConfetti({ confettiRadius: 5, confettiNumber: 2000 });
+    }
+
     setSelectedAnswers((prevState) => ({
       ...prevState,
       [questionId]: currentSelections,
@@ -85,10 +89,10 @@ export default function Home() {
 
   // to do: ensure confetti turns up AFTER the user has completed the test
   // to do: figure out what to do about code blocks (add to json or separate file with specified questions related to code)
-
+  // to do: show the correct answer if wrong answer is selected
   // add a tracker of what question the user is one and then fire this event below
-  score >= 47 &&
-    jsConfetti.addConfetti({ confettiRadius: 5, confettiNumber: 2000 });
+  // score >= 47 &&
+  //   jsConfetti.addConfetti({ confettiRadius: 5, confettiNumber: 2000 });
 
   // hoist state from timer here and then reset the score to zero if the user clicks start/clear
 
