@@ -6,7 +6,7 @@ import Timer from "./components/timer";
 import JSConfetti from "js-confetti";
 // Dynamically import JSConfetti so it's only loaded on the client side
 // @ts-ignore
-// const JSConfetti = dynamic(() => import("js-confetti"), { ssr: false });
+// const JSConfetti: any = dynamic(() => import("js-confetti"), { ssr: false });
 
 export default function Home() {
   const [selectedAnswers, setSelectedAnswers] = useState<{
@@ -15,6 +15,9 @@ export default function Home() {
   const [score, setScore] = useState<number>(0);
   const [randomQuestions, setRandomQuestions] = useState<any[]>([]);
   const [scoredQuestions, setScoredQuestions] = useState<{
+    [key: number]: boolean;
+  }>({});
+  const [showCorrectAnswers, setShowCorrectAnswers] = useState<{
     [key: number]: boolean;
   }>({});
 
@@ -26,7 +29,6 @@ export default function Home() {
 
     setRandomQuestions(generatedQuestions);
   }, []);
-  // @ts-ignore
 
   const jsConfetti = new JSConfetti();
 
@@ -85,6 +87,14 @@ export default function Home() {
         [questionId]: true,
       }));
     }
+
+    if (!isCorrect) {
+      // If the answer is wrong, display the correct answer
+      setShowCorrectAnswers((prevShow) => ({
+        ...prevShow,
+        [questionId]: true,
+      }));
+    }
   };
 
   // to do: ensure confetti turns up AFTER the user has completed the test
@@ -130,8 +140,10 @@ export default function Home() {
                     className={
                       selectedAnswers[q.id]?.[a.id] !== undefined
                         ? selectedAnswers[q.id][a.id]
-                          ? "bg-green-500"
-                          : "bg-red-500"
+                          ? "text-green-500"
+                          : "text-red-500"
+                        : showCorrectAnswers[q.id] && a.isCorrect
+                        ? "bg-yellow-300 text-green-600"
                         : ""
                     }
                     onClick={(event) =>
