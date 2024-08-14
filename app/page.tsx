@@ -83,6 +83,7 @@ export default function Home() {
   };
 
   // to do: ensure confetti turns up AFTER the user has completed the test
+  // to do: figure out what to do about code blocks (add to json or separate file with specified questions related to code)
 
   score >= 47 &&
     jsConfetti.addConfetti({ confettiRadius: 5, confettiNumber: 2000 });
