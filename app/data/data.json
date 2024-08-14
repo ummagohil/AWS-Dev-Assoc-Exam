@@ -9407,22 +9407,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Implement exponential backoffs in the application",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Load balance the application to multiple servers",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Move the application to Amazon EC2",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Add a one second delay to each API call",
             "isCorrect": false
           }
         ]
@@ -9433,22 +9433,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Write a script that deletes old records; schedule the scripts as a cron job on an Amazon EC2 instance",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Add an attribute with the expiration time; enable the Time To Live feature based on that attribute",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Each day, create a new table to hold session data; delete the previous day's table",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Add an attribute with the expiration time; name the attribute ItemExpiration.",
             "isCorrect": false
           }
         ]
@@ -9459,22 +9459,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "First split the files to make them smaller, then process with synchronous RequestResponse Lambda invocations",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Make synchronous RequestResponse Lambda invocations and process the files one by one",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Make asynchronous Event Lambda invocations and process the files in parallel",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "First join all the files, then process it all at once with an asynchronous Event Lambda invocation",
             "isCorrect": false
           }
         ]
@@ -9485,22 +9485,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Upload the object using the multi-part upload API",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Upload the object over an AWS Direct Connect connection",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Contact AWS Support to increase the object size limit",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Upload the object to another AWS region",
             "isCorrect": false
           }
         ]
@@ -9511,22 +9511,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Run the following:docker pull REPOSITORY URI : TAG",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Run the output of the following:aws ecr get-login and then run: docker pull REPOSITORY URI : TAG",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Run the following:aws ecr get-login and then run: docker pull REPOSITORY URI : TAG",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Run the output of the following: aws ecr get-download-url-for-layer and then run: docker pull REPOSITORY URI : TAG",
             "isCorrect": false
           }
         ]
@@ -9537,22 +9537,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Amazon Cognito user pools",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "AWS Mobile Hub user data storage",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Amazon Cognito Sync",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "AWS Mobile Hub cloud logic",
             "isCorrect": false
           }
         ]
@@ -9563,22 +9563,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Create an IAM user that has permissions to access the Amazon S3 bucket, and store the IAM user credentials in the Lambda function source code",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Create an IAM role that has permissions to access the Amazon S3 bucket and assign it to the Lambda function as its execution role",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Create an Amazon S3 bucket policy that specifies the Lambda service as its principal and assign it to the Amazon S3 bucket",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Create an IAM role, attach the AmazonS3FullAccess managed policy to it, and assign the role to the Lambda function as its execution role",
             "isCorrect": false
           }
         ]
@@ -9589,22 +9589,27 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Use AWS KMS to encrypt traffic between CloudFront and the web application",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Set the Origin Protocol Policy to 'HTTPS Only'",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Set the Origin's HTTP Port to 443",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Set the Viewer Protocol Policy to 'HTTPS Only' or 'Redirect HTTP to HTTPS'",
+            "isCorrect": true
+          },
+          {
+            "id": "5",
+            "text": "Enable the CloudFront option Restrict Viewer Access",
             "isCorrect": false
           }
         ]
@@ -9615,22 +9620,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "50 read capacity units",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "100 read capacity units",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "200 read capacity units",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "500 read capacity units",
             "isCorrect": false
           }
         ]
@@ -9641,22 +9646,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Amazon S3",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "AWS CloudTrail",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Amazon CloudWatch",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Amazon DynamoDB",
             "isCorrect": false
           }
         ]
@@ -9667,22 +9672,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Store the files in EBS and delete the files at the end of the Lambda function",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Copy the files to EFS and delete the files at the end of the Lambda function",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Store the files in the /tmp directory and delete the files at the end of the Lambda function",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Copy the files to an S3 bucket with a lifecycle policy to delete the files",
             "isCorrect": false
           }
         ]
@@ -9693,22 +9698,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "AWS CloudFormation",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "AWS Elastic Beanstalk",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Amazon S3",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "AWS CodePipeline",
             "isCorrect": false
           }
         ]
@@ -9719,22 +9724,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Write data to Amazon ElastiCache",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Write data to Amazon Elastic Block Store",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Write data to Amazon EC2 Instance Store",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Write data to the root filesystem",
             "isCorrect": false
           }
         ]
@@ -9745,22 +9750,27 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Amazon SQS",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Amazon Cognito",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Amazon Kinesis",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Amazon SNS",
+            "isCorrect": true
+          },
+          {
+            "id": "5",
+            "text": "Amazon ElastiCache",
             "isCorrect": false
           }
         ]
@@ -9771,23 +9781,28 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Use the same access key in all applications for consistency",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Delete all access keys for the account root user",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Leave unused access keys in the account for tracking purposes",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Embed and encrypt access keys in code for continuous deployment",
             "isCorrect": false
+          },
+          {
+            "id": "5",
+            "text": "Use Amazon IAM roles instead of access keys where possible",
+            "isCorrect": true
           }
         ]
       },
@@ -9797,22 +9812,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Sign the AWS CLI command using the signature version 4 process",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Run the aws configure AWS CLI command and specify the access key id and secret access key",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Specify a role for the EC2 instance with the necessary privileges",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Pass the access key id and secret access key as parameters for each AWS CLI command",
             "isCorrect": false
           }
         ]
@@ -9823,22 +9838,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Remove the application from the ALB. Delete the ALB and change Amazon Route 53 to direct traffic to the instance running the application",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Remove the application from the ALB. Create a Classic Load Balancer in its place. Direct traffic to the application using the HTTP protocol",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Alter the application code to inspect the X-Forwarded-For header. Ensure that the code can work properly if a list of IP addresses is passed in the header",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Alter the application code to inspect a custom header. Alter the client code to pass the IP address in the custom header",
             "isCorrect": false
           }
         ]
@@ -9849,23 +9864,23 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Use the Elastic Beanstalk CLI to disassociate the database",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Use the AWS CLI to disassociate the database",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Change the deployment policy to disassociate the database",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
-            "isCorrect": false
+            "text": "Recreate a new Elastic Beanstalk environment without Amazon RDS",
+            "isCorrect": true
           }
         ]
       },
@@ -9875,22 +9890,27 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "The change was not made in the master branch of the AWS CodeCommit repository",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "One of the earlier stages in the pipeline failed and the pipeline has terminated",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "One of the Amazon EC2 instances in the company's AWS CodePipeline cluster is inactive",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "The AWS CodePipeline is incorrectly configured and is not executing AWS CodeDeploy",
+            "isCorrect": false
+          },
+          {
+            "id": "5",
+            "text": "AWS CodePipeline does not have permissions to access AWS CodeCommit",
             "isCorrect": false
           }
         ]
@@ -9901,23 +9921,23 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Modify the user pool to include all the devices which keep them in sync",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Use the SyncCallback interface to receive notifications on the application",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Use an Amazon Cognito stream to analyze the data and push the notifications",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
-            "isCorrect": false
+            "text": "Use the push synchronization feature with the appropriate IAM role",
+            "isCorrect": true
           }
         ]
       },
@@ -9927,22 +9947,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Amazon API Gateway, Amazon S3",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "AWS Lambda, Amazon DynamoDB",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Amazon EC2, Amazon Aurora",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Amazon Cognito, Amazon RDS.",
             "isCorrect": false
           }
         ]
@@ -9953,22 +9973,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Retrieve the messages from the queue using long polling every 20 seconds",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Reduce the size of the messages by compressing them before sending",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Retrieve the messages from the queue using short polling every 10 seconds",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Reduce the size of each message payload by sending it in two parts",
             "isCorrect": false
           }
         ]
@@ -9979,22 +9999,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Modify the application to have both shared images and caching data written to Amazon EBS",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Modify the application to read and write cache data on Amazon S3, and also store shared images on S3",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Modify the application to use Amazon S3 for serving shared images; cache data can then be written to local disks",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Modify the application to read and write cache data on Amazon S3, while continuing to write shared images to local disks",
             "isCorrect": false
           }
         ]
@@ -10005,22 +10025,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "A Developer must trigger an AWS Lambda function based on the item lifecycle activity in an Amazon DynamoDB table. How can the Developer create the solution?",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Enable a DynamoDB stream that publishes an SNS message. Trigger the Lambda function asynchronously from the SNS message",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Enable a DynamoDB stream, and trigger the Lambda function synchronously from the stream",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Enable a DynamoDB stream, and trigger the Lambda function asynchronously from the stream",
             "isCorrect": false
           }
         ]
@@ -10031,22 +10051,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "The aws executable is not in the PATH environment variable",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Access to the aws executable has been denied to the installer",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Incorrect AWS credentials were provided",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "The aws script does not have an executable file mode",
             "isCorrect": false
           }
         ]
@@ -10057,22 +10077,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Add all new orders to an Amazon SQS queue. Configure a fleet of 10 EC2 instances spanning multiple AZs with the fraud detection solution installed on them to pull orders from this queue. Update the order with a pass or fails status",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Add all new orders to an SQS queue. Configure an Auto Scaling group that uses the queue depth metric as its unit of scale to launch a dynamically-sized fleet of EC2 instances spanning multiple AZs with the fraud detection solution installed on them to pull orders from this queue. Update the order with a pass or fails status",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Add all new orders to an Amazon Kinesis Stream. Subscribe a Lambda function to automatically read batches of records from the Kinesis Stream. The Lambda function includes the fraud detection software and will update the order with a pass or fail status",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Write all new orders to Amazon DynamoDB. Configure DynamoDB Streams to include all new orders. Subscribe a Lambda function to automatically read batches of records from the Kinesis Stream. The Lambda function includes the fraud detection software and will update the order with a pass or fail status",
             "isCorrect": false
           }
         ]
@@ -10083,23 +10103,23 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Add the export LC_ALL='en_US.utf8' command to the pre_build section to ensure POSIX localization",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Use Amazon Cognito to store key-value pairs for large numbers of environment variables",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Update the settings for the build project to use an Amazon S3 bucket for large numbers of environment variables",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
-            "isCorrect": false
+            "text": "Use AWS Systems Manager Parameter Store to store large numbers of environment variables",
+            "isCorrect": true
           }
         ]
       },
@@ -10109,22 +10129,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Ask customers to use AWS credentials to call the InvalidateCache API",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Ask customers to invoke an AWS API endpoint which invalidates the cache",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Ask customers to pass an HTTP header called Cache-Control:max-age=0",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Ask customers to add a query string parameter called 'INVALIDATE_CACHE' when making an API call",
             "isCorrect": false
           }
         ]
@@ -10135,22 +10155,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Use an Amazon CloudWatch event backed by an AWS Lambda function. Issue an Amazon S3 API call to get a list of all Amazon S3 objects and persist the metadata within DynamoDB. Have the web application poll the DynamoDBtable to reflect this change",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
-            "isCorrect": false
+            "text": "Use Amazon S3 Event Notification backed by a Lambda function to persist the metadata into DynamoDB. Have the web application poll the DynamoDB table to reflect this change",
+            "isCorrect": true
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Run a cron job within an Amazon EC2 instance to list all objects within Amazon S3 and persist the metadata into DynamoDB. Have the web application poll the DynamoDB table to reflect this change",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Create a new Amazon EMR cluster to get all the metadata about Amazon S3 objects; persist the metadata into DynamoDB. Have the web application poll the DynamoDB table to reflect this change",
             "isCorrect": false
           }
         ]
@@ -10161,22 +10181,27 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Define a Swagger file. Use AWS Elastic Beanstalk to deploy the Swagger file",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Define a Swagger file. Use AWS CodeDeploy to deploy the Swagger file",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Deploy a SAM template with an inline Swagger definition",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Define a Swagger file. Deploy a SAM template that references the Swagger file",
+            "isCorrect": true
+          },
+          {
+            "id": "5",
+            "text": "Define an inline Swagger definition in a Lambda function. Invoke the Lambda function",
             "isCorrect": false
           }
         ]
@@ -10187,22 +10212,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Change the existing Lambda function handling the uploads to create thumbnails at the time of upload. Have the function store both the image and thumbnail in Amazon S3",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Create a second Lambda function that handles thumbnail generation and storage. Change the existing Lambda function to invoke it asynchronously",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Create an S3 event notification with a Lambda function destination. Create a new Lambda function to generate and store thumbnails",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Create an S3 event notification to an SQS Queue. Create a scheduled Lambda function that processes the queue, and generates and stores thumbnails",
             "isCorrect": false
           }
         ]
@@ -10213,22 +10238,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Update the underlying Lambda function and provide clients with the new Lambda invocation URL",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Use API Gateway to automatically propagate the change to clients, specifying 180 days in the phased deployment parameter",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Use API Gateway to deploy a new stage named v2 to the API and provide users with its URL",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Update the underlying Lambda function, create an Amazon CloudFront distribution with the updated Lambda function as its origin",
             "isCorrect": false
           }
         ]
@@ -10239,22 +10264,22 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
-            "isCorrect": false
+            "text": "Use Amazon Cognito user pools and a custom authorizer to authenticate and authorize users based on JSON Web Tokens",
+            "isCorrect": true
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Build a OpenID token broker with Amazon and Facebook. Users will authenticate with these identify providers and pass the JSON Web Token to the API to authenticate each API call",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Store user credentials in Amazon DynamoDB and have the application retrieve temporary credentials from AWS STS. Make API calls by passing user credentials to the APIs for authentication and authorization",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Use Amazon RDS to store user credentials and pass them to the APIs for authentications and authorization",
             "isCorrect": false
           }
         ]
@@ -10265,48 +10290,48 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "In the root of the application",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "In the bin folder",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "In healthcheckur1.config.ebextension under root",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
-            "isCorrect": false
+            "text": "In the .ebextensions folder",
+            "isCorrect": true
           }
         ]
       },
       {
         "id": 385,
-        "question": "A Developer has implemented a Lambda function that needs to add new customers to an RDS database that is expected to run hundreds of times per hour. The Lambda function is configured to use 512MB of RAM and is based on the following pseudo code. After testing the Lambda function, the Developer notices that the Lambda execution time is much longer than expected. What should the Developer do to improve performance?",
+        "question": "[to do: add image] A Developer has implemented a Lambda function that needs to add new customers to an RDS database that is expected to run hundreds of times per hour. The Lambda function is configured to use 512MB of RAM and is based on the following pseudo code. After testing the Lambda function, the Developer notices that the Lambda execution time is much longer than expected. What should the Developer do to improve performance?",
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Increase the amount of RAM allocated to the Lambda function, which will increase the number of threads the Lambda can use",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Increase the size of the RDS database to allow for an increased number of database connections each hour",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
-            "isCorrect": false
+            "text": "Move the database connection and close statement out of the handler. Place the connection in the global space",
+            "isCorrect": true
           },
           {
             "id": "4",
-            "text": "",
+            "text": "Replace RDS wit Amazon DynamoDB to implement control over the number of writes per second",
             "isCorrect": false
           }
         ]
@@ -10317,23 +10342,23 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "The referenced Amazon S3 bucket is in another region",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "The images must be stored in the same Amazon S3 bucket",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Port 80 must be opened on the security group in which the Amazon S3 bucket is located",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
-            "isCorrect": false
+            "text": "Cross Origin Resource Sharing must be enabled on the Amazon S3 bucket",
+            "isCorrect": true
           }
         ]
       },
@@ -10343,23 +10368,23 @@
         "answers": [
           {
             "id": "1",
-            "text": "",
+            "text": "Prefix folder names with user id; for example, s3://BUCKET/2013-FOLDERNAME/FILENAME.zip",
             "isCorrect": false
           },
           {
             "id": "2",
-            "text": "",
+            "text": "Prefix file names with timestamps; for example, s3://BUCKET/FOLDERNAME/2013-26-05-15-00-00-FILENAME.zip",
             "isCorrect": false
           },
           {
             "id": "3",
-            "text": "",
+            "text": "Prefix file names with random hex hashes; for example, s3://BUCKET/FOLDERNAME/23a6-FILENAME.zip",
             "isCorrect": false
           },
           {
             "id": "4",
-            "text": "",
-            "isCorrect": false
+            "text": "Prefix folder names with random hex hashes; for example, s3://BUCKET/23a6-FOLDERNAME/FILENAME.zip",
+            "isCorrect": true
           }
         ]
       }
