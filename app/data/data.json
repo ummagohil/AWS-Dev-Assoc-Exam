@@ -489,37 +489,7 @@
           }
         ]
       },
-      {
-        "id": 19,
-        "question": "q19 - placeholder question (reminder to self: remove this once dev is done)",
-        "answers": [
-          {
-            "id": "1",
-            "text": "ans 1",
-            "isCorrect": false
-          },
-          {
-            "id": "2",
-            "text": "ans 2",
-            "isCorrect": false
-          },
-          {
-            "id": "3",
-            "text": "ans 3",
-            "isCorrect": false
-          },
-          {
-            "id": "4",
-            "text": "ans 4",
-            "isCorrect": false
-          },
-          {
-            "id": "5",
-            "text": "ans 5",
-            "isCorrect": false
-          }
-        ]
-      },
+
       {
         "id": 20,
         "question": "A software company needs to make sure user-uploaded documents are securely stored in Amazon S3. The documents must be encrypted at rest in Amazon S3. The company does not want to manage the security infrastructure in-house, but the company still needs extra protection to ensure it has control over its encryption keys due to industry regulations. Which encryption strategy should a developer use to meet these requirements?",

@@ -20,7 +20,7 @@ export default function Home() {
   useEffect(() => {
     const data: any = Data.quiz.questions;
     const generatedQuestions = data
-      .filter(() => Math.random() < 66 / data.length)
+      .filter(() => Math.random() < 80 / data.length)
       .slice(0, 65);
 
     setRandomQuestions(generatedQuestions);
