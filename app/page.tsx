@@ -1,10 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
 import Data from "./data/data.json";
-import Timer from "./components/timer";
 import JSConfetti from "js-confetti";
 import AnswerSelect from "./components/answerSelection";
 import Result from "./components/score";
+import Header from "./components/header";
 
 export default function Home() {
   const [selectedAnswers, setSelectedAnswers] = useState<{
@@ -106,24 +106,7 @@ export default function Home() {
 
   return (
     <div className=" h-full w-full bg-red-100 bg-[linear-gradient(to_right,red_1px,transparent_1px),linear-gradient(to_bottom,red_1px,transparent_1px)] bg-[size:50px_50px]">
-      <div className="bg-white w-full p-8 text-center border-b-8 border-b-orange-300">
-        <h1 className="text-outline-black text-8xl font-bold">
-          AWS Developer Associate Exam Practice
-        </h1>
-      </div>
-      <div className="flex justify-center items-center pt-8 mx-24 justify-between">
-        <div>
-          <h1
-            className="text-blue-500"
-            style={{ fontSize: "40px", fontWeight: "bold" }}
-          >
-            Score: {score}/65
-          </h1>
-        </div>
-        <div>
-          <Timer />
-        </div>
-      </div>
+      <Header score={score} />
 
       <ol className="list-decimal list-inside bg-white p-8 mt-4 mx-24 rounded-xl text-blue-600">
         {randomQuestions.map((q: any) => (
