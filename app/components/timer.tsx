@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-export default function Timer() {
+export default function Timer({ resetScore }: any) {
   const [timeLeft, setTimeLeft] = useState<number>(130 * 60); // 130 minutes in seconds
   const [isRunning, setIsRunning] = useState<boolean>(false);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
@@ -42,6 +42,7 @@ export default function Timer() {
     if (timerRef.current) {
       clearInterval(timerRef.current);
     }
+    resetScore();
   };
 
   return (
