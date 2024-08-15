@@ -99,6 +99,13 @@ export default function Home() {
     setScore(0);
   };
 
+  const resetAnsweredQuestions = () => {
+    setSelectedAnswers({});
+    setScoredQuestions({});
+    setShowCorrectAnswers({});
+    resetScore();
+  };
+
   // to do: ensure confetti turns up AFTER the user has completed the test
   // to do: figure out what to do about code blocks (add to json or separate file with specified questions related to code)
   // to do: show the correct answer if wrong answer is selected
@@ -110,7 +117,11 @@ export default function Home() {
 
   return (
     <div className=" h-full w-full bg-red-100 bg-[linear-gradient(to_right,red_1px,transparent_1px),linear-gradient(to_bottom,red_1px,transparent_1px)] bg-[size:50px_50px]">
-      <Header score={score} resetScore={resetScore} />
+      <Header
+        score={score}
+        resetScore={resetScore}
+        resetAnsweredQuestions={resetAnsweredQuestions}
+      />
       <ol className="list-decimal list-inside bg-white p-8 mt-4 mx-24 rounded-xl text-blue-600">
         {randomQuestions.map((q: any) => (
           <div key={q.id}>

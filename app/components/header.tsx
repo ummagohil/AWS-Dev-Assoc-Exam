@@ -1,6 +1,10 @@
 import Timer from "./timer";
 
-export default function Header({ score, resetScore }: any) {
+export default function Header({
+  score,
+  resetScore,
+  resetAnsweredQuestions,
+}: any) {
   return (
     <>
       <div className="bg-white w-full p-8 text-center border-b-8 border-b-orange-300">
@@ -18,7 +22,10 @@ export default function Header({ score, resetScore }: any) {
           </h1>
         </div>
         <div>
-          <Timer resetScore={resetScore} />
+          <Timer
+            resetScore={resetScore}
+            resetAnsweredQuestions={resetAnsweredQuestions}
+          />
         </div>
       </div>
     </>
