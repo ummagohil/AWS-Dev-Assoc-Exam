@@ -4,6 +4,7 @@ import Data from "./data/data.json";
 import Timer from "./components/timer";
 import JSConfetti from "js-confetti";
 import AnswerSelect from "./components/answerSelection";
+import Result from "./components/score";
 
 export default function Home() {
   const [selectedAnswers, setSelectedAnswers] = useState<{
@@ -145,21 +146,7 @@ export default function Home() {
             </ul>
           </div>
         ))}
-        {score >= 47 ? (
-          <h1
-            className="text-green-500"
-            style={{ fontSize: "40px", fontWeight: "bold" }}
-          >
-            PASS
-          </h1>
-        ) : (
-          <h1
-            className="text-red-500"
-            style={{ fontSize: "40px", fontWeight: "bold" }}
-          >
-            FAIL
-          </h1>
-        )}
+        <Result score={score} />
       </ol>
     </div>
   );
