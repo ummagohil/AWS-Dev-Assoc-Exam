@@ -14,7 +14,7 @@ export default function Header({
   return (
     <>
       <div className="bg-white w-full p-8 text-center border-b-8 border-b-orange-300">
-        <h1 className="text-outline-black text-8xl font-bold">
+        <h1 className="text-outline-black sm:text-md text-8xl font-bold">
           AWS Developer Associate Exam Practice
         </h1>
       </div>

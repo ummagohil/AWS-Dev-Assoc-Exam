@@ -35,3 +35,4 @@ https://aws-dev-assoc-exam.vercel.app
 - Modal component for when the user finishes the test to be able to see their result immediately
 - Use a state management library such as Zustand to handle the global state
 - Use Next.js back-end service via the api folder functionality to handle data
+- Mobile friendly design
