@@ -1,4 +1,8 @@
-export default function Score({ score }: any) {
+type Props = {
+  score: number;
+};
+
+export default function Score({ score }: Props) {
   return (
     <>
       {score >= 47 ? (

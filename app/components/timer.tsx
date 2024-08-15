@@ -1,6 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 
-export default function Timer({ resetScore, resetAnsweredQuestions }: any) {
+type Props = {
+  resetScore: () => void;
+  resetAnsweredQuestions: () => void;
+};
+
+export default function Timer({ resetScore, resetAnsweredQuestions }: Props) {
   const [timeLeft, setTimeLeft] = useState<number>(130 * 60); // 130 minutes in seconds
   const [isRunning, setIsRunning] = useState<boolean>(false);
   const timerRef = useRef<NodeJS.Timeout | null>(null);

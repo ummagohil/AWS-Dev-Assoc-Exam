@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Key } from "react";
 import Data from "./data/data.json";
 import JSConfetti from "js-confetti";
 import AnswerSelect from "./components/answerSelection";
@@ -20,7 +20,7 @@ export default function Home() {
   }>({});
 
   useEffect(() => {
-    const data: any = Data.quiz.questions;
+    const data = Data.quiz.questions;
     const generatedQuestions = data
       .filter(() => Math.random() < 80 / data.length)
       .slice(0, 65);
@@ -31,7 +31,7 @@ export default function Home() {
   const handleAnswerClick = (
     questionId: number,
     answerId: string,
-    isCorrect: boolean,
+    isCorrect: any,
     event: React.MouseEvent<HTMLButtonElement>
   ) => {
     event.preventDefault();
@@ -50,7 +50,7 @@ export default function Home() {
     };
 
     const totalCorrectAnswers = question.answers.filter(
-      (a: any) => a.isCorrect
+      (a: { isCorrect: boolean }) => a.isCorrect
     ).length;
     const correctSelections = Object.values(currentSelections).filter(
       (value) => value
@@ -106,15 +106,6 @@ export default function Home() {
     resetScore();
   };
 
-  // to do: ensure confetti turns up AFTER the user has completed the test
-  // to do: figure out what to do about code blocks (add to json or separate file with specified questions related to code)
-  // to do: show the correct answer if wrong answer is selected
-  // add a tracker of what question the user is one and then fire this event below
-  // score >= 47 &&
-  //   jsConfetti.addConfetti({ confettiRadius: 5, confettiNumber: 2000 });
-
-  // hoist state from timer here and then reset the score to zero if the user clicks start/clear
-
   return (
     <div className=" h-full w-full bg-red-100 bg-[linear-gradient(to_right,red_1px,transparent_1px),linear-gradient(to_bottom,red_1px,transparent_1px)] bg-[size:50px_50px]">
       <Header
@@ -123,12 +114,12 @@ export default function Home() {
         resetAnsweredQuestions={resetAnsweredQuestions}
       />
       <ol className="list-decimal list-inside bg-white p-8 mt-4 mx-24 rounded-xl text-blue-600">
-        {randomQuestions.map((q: any) => (
+        {randomQuestions.map((q) => (
           <div key={q.id}>
             <br />
             <li>{q.question}</li>
             <ul className="list-disc list-inside">
-              {q.answers.map((a: any) => (
+              {q.answers.map((a: { id: Key }) => (
                 <li key={a.id}>
                   <AnswerSelect
                     selectedAnswers={selectedAnswers}

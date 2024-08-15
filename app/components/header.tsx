@@ -1,10 +1,16 @@
 import Timer from "./timer";
 
+type Props = {
+  score: number;
+  resetScore: () => void;
+  resetAnsweredQuestions: () => void;
+};
+
 export default function Header({
   score,
   resetScore,
   resetAnsweredQuestions,
-}: any) {
+}: Props) {
   return (
     <>
       <div className="bg-white w-full p-8 text-center border-b-8 border-b-orange-300">

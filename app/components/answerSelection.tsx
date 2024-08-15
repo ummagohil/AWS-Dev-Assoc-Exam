@@ -1,3 +1,25 @@
+import { Key } from "react";
+
+type Props = {
+  selectedAnswers: any;
+  q: { id: number };
+  a: {
+    isCorrect?: boolean | any;
+    text?: string;
+    id: Key | any;
+  };
+  showCorrectAnswers: {
+    [key: number]: boolean;
+  };
+  handleAnswerClick: (
+    questionId: number,
+    answerId: string,
+    isCorrect: { id: any },
+    event: React.MouseEvent<HTMLButtonElement>
+  ) => void;
+  scoredQuestions: { [key: number]: boolean };
+};
+
 export default function AnswerSelect({
   selectedAnswers,
   q,
@@ -5,7 +27,7 @@ export default function AnswerSelect({
   showCorrectAnswers,
   handleAnswerClick,
   scoredQuestions,
-}: any) {
+}: Props) {
   return (
     <button
       className={
