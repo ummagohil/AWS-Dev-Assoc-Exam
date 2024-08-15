@@ -1,12 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
 import Data from "./data/data.json";
-import dynamic from "next/dynamic";
 import Timer from "./components/timer";
 import JSConfetti from "js-confetti";
-// Dynamically import JSConfetti so it's only loaded on the client side
-// @ts-ignore
-// const JSConfetti: any = dynamic(() => import("js-confetti"), { ssr: false });
+import AnswerSelect from "./components/answerSelection";
 
 export default function Home() {
   const [selectedAnswers, setSelectedAnswers] = useState<{
@@ -132,32 +129,37 @@ export default function Home() {
           <div key={q.id}>
             <br />
             <li>{q.question}</li>
-
             <ul className="list-disc list-inside">
               {q.answers.map((a: any) => (
                 <li key={a.id}>
-                  <button
-                    className={
-                      selectedAnswers[q.id]?.[a.id] !== undefined
-                        ? selectedAnswers[q.id][a.id]
-                          ? "text-green-500"
-                          : "text-red-500"
-                        : showCorrectAnswers[q.id] && a.isCorrect
-                        ? "bg-yellow-300 text-green-600"
-                        : ""
-                    }
-                    onClick={(event) =>
-                      handleAnswerClick(q.id, a.id, a.isCorrect, event)
-                    }
-                    disabled={scoredQuestions[q.id] !== undefined}
-                  >
-                    {a.text}
-                  </button>
+                  <AnswerSelect
+                    selectedAnswers={selectedAnswers}
+                    q={q}
+                    a={a}
+                    showCorrectAnswers={showCorrectAnswers}
+                    handleAnswerClick={handleAnswerClick}
+                    scoredQuestions={scoredQuestions}
+                  />
                 </li>
               ))}
             </ul>
           </div>
         ))}
+        {score >= 47 ? (
+          <h1
+            className="text-green-500"
+            style={{ fontSize: "40px", fontWeight: "bold" }}
+          >
+            PASS
+          </h1>
+        ) : (
+          <h1
+            className="text-red-500"
+            style={{ fontSize: "40px", fontWeight: "bold" }}
+          >
+            FAIL
+          </h1>
+        )}
       </ol>
     </div>
   );
