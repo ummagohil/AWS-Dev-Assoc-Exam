@@ -1,12 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
 import Data from "./data/data.json";
-import dynamic from "next/dynamic";
-import Timer from "./components/timer";
 import JSConfetti from "js-confetti";
-// Dynamically import JSConfetti so it's only loaded on the client side
-// @ts-ignore
-// const JSConfetti: any = dynamic(() => import("js-confetti"), { ssr: false });
+import AnswerSelect from "./components/answerSelection";
+import Result from "./components/score";
+import Header from "./components/header";
 
 export default function Home() {
   const [selectedAnswers, setSelectedAnswers] = useState<{
@@ -97,6 +95,17 @@ export default function Home() {
     }
   };
 
+  const resetScore = () => {
+    setScore(0);
+  };
+
+  const resetAnsweredQuestions = () => {
+    setSelectedAnswers({});
+    setScoredQuestions({});
+    setShowCorrectAnswers({});
+    resetScore();
+  };
+
   // to do: ensure confetti turns up AFTER the user has completed the test
   // to do: figure out what to do about code blocks (add to json or separate file with specified questions related to code)
   // to do: show the correct answer if wrong answer is selected
@@ -108,56 +117,33 @@ export default function Home() {
 
   return (
     <div className=" h-full w-full bg-red-100 bg-[linear-gradient(to_right,red_1px,transparent_1px),linear-gradient(to_bottom,red_1px,transparent_1px)] bg-[size:50px_50px]">
-      <div className="bg-white w-full p-8 text-center border-b-8 border-b-orange-300">
-        <h1 className="text-outline-black text-8xl font-bold">
-          AWS Developer Associate Exam Practice
-        </h1>
-      </div>
-      <div className="flex justify-center items-center pt-8 mx-24 justify-between">
-        <div>
-          <h1
-            className="text-blue-500"
-            style={{ fontSize: "40px", fontWeight: "bold" }}
-          >
-            Score: {score}/65
-          </h1>
-        </div>
-        <div>
-          <Timer />
-        </div>
-      </div>
-
+      <Header
+        score={score}
+        resetScore={resetScore}
+        resetAnsweredQuestions={resetAnsweredQuestions}
+      />
       <ol className="list-decimal list-inside bg-white p-8 mt-4 mx-24 rounded-xl text-blue-600">
         {randomQuestions.map((q: any) => (
           <div key={q.id}>
             <br />
             <li>{q.question}</li>
-
             <ul className="list-disc list-inside">
               {q.answers.map((a: any) => (
                 <li key={a.id}>
-                  <button
-                    className={
-                      selectedAnswers[q.id]?.[a.id] !== undefined
-                        ? selectedAnswers[q.id][a.id]
-                          ? "text-green-500"
-                          : "text-red-500"
-                        : showCorrectAnswers[q.id] && a.isCorrect
-                        ? "bg-yellow-300 text-green-600"
-                        : ""
-                    }
-                    onClick={(event) =>
-                      handleAnswerClick(q.id, a.id, a.isCorrect, event)
-                    }
-                    disabled={scoredQuestions[q.id] !== undefined}
-                  >
-                    {a.text}
-                  </button>
+                  <AnswerSelect
+                    selectedAnswers={selectedAnswers}
+                    q={q}
+                    a={a}
+                    showCorrectAnswers={showCorrectAnswers}
+                    handleAnswerClick={handleAnswerClick}
+                    scoredQuestions={scoredQuestions}
+                  />
                 </li>
               ))}
             </ul>
           </div>
         ))}
+        <Result score={score} />
       </ol>
     </div>
   );
