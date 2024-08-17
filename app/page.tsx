@@ -114,7 +114,7 @@ export default function Home() {
         resetScore={resetScore}
         resetAnsweredQuestions={resetAnsweredQuestions}
       />
-      <ol className="shadow-solid-black list-decimal list-inside bg-white p-8 mt-4 mx-24 rounded-xl text-blue-600">
+      <ol className="blue-border shadow-solid-black list-decimal list-inside bg-white p-8 mt-4 mx-24 rounded-xl text-blue-600">
         {randomQuestions.map((q) => (
           <div key={q.id}>
             <br />

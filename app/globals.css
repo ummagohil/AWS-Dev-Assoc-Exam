@@ -39,3 +39,7 @@ body {
   @apply text-transparent;
   -webkit-text-stroke: 1px blue;
 }
+
+.blue-border {
+  border: 1px solid;
+}
