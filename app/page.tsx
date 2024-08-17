@@ -21,10 +21,11 @@ export default function Home() {
 
   useEffect(() => {
     const data = Data.quiz.questions;
-    const generatedQuestions = data
-      .filter(() => Math.random() < 80 / data.length)
-      .slice(0, 65);
+    // Shuffle the array of questions
+    const shuffledQuestions = data.sort(() => 0.5 - Math.random());
 
+    // Select the first 65 questions
+    const generatedQuestions = shuffledQuestions.slice(0, 65);
     setRandomQuestions(generatedQuestions);
   }, []);
 
@@ -107,13 +108,13 @@ export default function Home() {
   };
 
   return (
-    <div className=" h-full w-full bg-red-100 bg-[linear-gradient(to_right,red_1px,transparent_1px),linear-gradient(to_bottom,red_1px,transparent_1px)] bg-[size:50px_50px]">
+    <div className="p-4 h-full w-full bg-red-100 bg-[linear-gradient(to_right,red_1px,transparent_1px),linear-gradient(to_bottom,red_1px,transparent_1px)] bg-[size:50px_50px]">
       <Header
         score={score}
         resetScore={resetScore}
         resetAnsweredQuestions={resetAnsweredQuestions}
       />
-      <ol className="list-decimal list-inside bg-white p-8 mt-4 mx-24 rounded-xl text-blue-600">
+      <ol className="shadow-solid-black list-decimal list-inside bg-white p-8 mt-4 mx-24 rounded-xl text-blue-600">
         {randomQuestions.map((q) => (
           <div key={q.id}>
             <br />

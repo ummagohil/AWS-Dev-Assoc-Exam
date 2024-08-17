@@ -13,7 +13,7 @@ export default function Header({
 }: Props) {
   return (
     <>
-      <div className="bg-white w-full p-8 text-center border-b-8 border-b-orange-300">
+      <div className="bg-white -mt-4 -ml-4 w-screen p-8 text-center border-b-8 border-b-orange-300">
         <h1 className="text-outline-black sm:text-md text-8xl font-bold">
           AWS Developer Associate Exam Practice
         </h1>
