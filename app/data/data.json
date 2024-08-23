@@ -2939,7 +2939,7 @@
           {
             "id": "2",
             "text": "Configure Dead Letter Queues by sending events to Amazon SQS for investigation",
-            "isCorrect": false
+            "isCorrect": true
           },
           {
             "id": "3",
