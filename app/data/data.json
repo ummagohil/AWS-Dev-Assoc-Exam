@@ -1235,7 +1235,7 @@
       },
       {
         "id": 48,
-        "question": "[reminder: add the image in] The Lambda function below is being called through an API using Amazon API Gateway. The average execution time for the Lambda function is about 1 second. The pseudocode for the Lambda function is as shown in the exhibit. What two actions can be taken to improve the performance of this Lambda function without increasing the cost of the solution? (Select TWO)",
+        "question": "The Lambda function below is being called through an API using Amazon API Gateway. The average execution time for the Lambda function is about 1 second. The pseudocode for the Lambda function is as shown in the exhibit. What two actions can be taken to improve the performance of this Lambda function without increasing the cost of the solution? (Select TWO)",
         "answers": [
           {
             "id": "1",
@@ -1262,7 +1262,8 @@
             "text": "Implement local caching of Amazon RDS data so Lambda can re-use the cache",
             "isCorrect": false
           }
-        ]
+        ],
+        "code": "include \"3rd party encryption module\"\n\ninclude \"match module\"\n\ndef lambda_handler(event, context):\n\n    rds_host = \"rds-instance-endpoint\"\n    name = db_username\n    password = db_password\n    db_name = db_name\n\n    # Connect to the RDS Database\n    Conn = RDSConnection(rds_host, user=name, passwd=password, db=db_name, connect_timeout=5)\n\n    # Perform some Processing reading data from the RDS database\n    # Code Block\n    # Code Block\n    # Code Block\n"
       },
       {
         "id": 49,
@@ -1526,7 +1527,7 @@
       },
       {
         "id": 59,
-        "question": "[reminder: add image/code block] Given the source code for an AWS Lambda function in the local store.py containing a handler function called get_store and the following AWS CloudFormation template. What should be done to prepare the template so that it can be deployed using the AWS CLI command aws cloudformation deploy?",
+        "question": "Given the source code for an AWS Lambda function in the local store.py containing a handler function called get_store and the following AWS CloudFormation template. What should be done to prepare the template so that it can be deployed using the AWS CLI command aws cloudformation deploy?",
         "answers": [
           {
             "id": "1",
@@ -2270,7 +2271,7 @@
       },
       {
         "id": 87,
-        "question": "[to do: add image]A Developer is working on an application that tracks hundreds of millions of product reviews in an Amazon DynamoDB table. The records include the data elements shown in the table. Which field, when used as the partition key, would result in the MOST consistent performance using DynamoDB?",
+        "question": "A Developer is working on an application that tracks hundreds of millions of product reviews in an Amazon DynamoDB table. The records include the data elements shown in the table. Which field, when used as the partition key, would result in the MOST consistent performance using DynamoDB?",
         "answers": [
           {
             "id": "1",
@@ -2292,11 +2293,12 @@
             "text": "productID",
             "isCorrect": false
           }
-        ]
+        ],
+        "code": "| Name       | Type   | Description                       |\n|------------|--------|-----------------------------------|\n| reviewID   | Number | 16 digit UUID                     |\n| starRating | Number | Integer 1-5 of user rating        |\n| comment    | String | User comment string               |\n| productID  | Number | Product ID being reviewed         |"
       },
       {
         "id": 88,
-        "question": "[to do: add image]A development team consists of 10 team members. Similar to a home directory for each team member, the manager wants to grant access to user-specific folders in an Amazon S3 bucket. For the team member with the username 'TeamMemberX', the snippet of the IAM policy looks like this. Instead of creating distinct policies for each team member, what approach can be used to make this policy snippet generic for all team members?",
+        "question": "A development team consists of 10 team members. Similar to a home directory for each team member, the manager wants to grant access to user-specific folders in an Amazon S3 bucket. For the team member with the username 'TeamMemberX', the snippet of the IAM policy looks like this. Instead of creating distinct policies for each team member, what approach can be used to make this policy snippet generic for all team members?",
         "answers": [
           {
             "id": "1",
@@ -2318,7 +2320,8 @@
             "text": "Use IAM policy resource",
             "isCorrect": false
           }
-        ]
+        ],
+        "code": "{\n  \"Sid\": \"AllowS3ActionToFolders\",\n  \"Effect\": \"Allow\",\n  \"Action\": [\"s3:*\"],\n  \"Resource\": [\"arn:aws:s3:::company-name/home/TeamMemberX/*\"]\n}"
       },
       {
         "id": 89,
@@ -2587,7 +2590,7 @@
       },
       {
         "id": 99,
-        "question": "[to do: add image] A Developer executed a AWS CLI command and received the error shown below. What action should the Developer perform to make this error human-readable?",
+        "question": "A Developer executed a AWS CLI command and received the error shown below. What action should the Developer perform to make this error human-readable?",
         "answers": [
           {
             "id": "1",
@@ -2609,7 +2612,8 @@
             "text": "Use the AWS IAM decode-authorization-message API to decode this message",
             "isCorrect": false
           }
-        ]
+        ],
+        "code": "A client error (UnauthorizedOperation) occurred when calling the RunInstances operation:\nYou are not authorized to perform this operation. Encoded authorization failure message:\noGsBaAIV7wlfj82UqebHUANHzFbmkzILlxyj_y9xwhIHk99U_cUqIF1eZnskWDjQ1wSHStVfdCEyZILGoccGpCiC1hORcWE9zRwFTnEcR3JN9iTzPA2ilWHweC5Z54ALPaWEljHLlg8CaB8d1CKmxQuy1LmOr1Bf2EHrURjAYopYMmga8o1FmKAl9yn_Z5r1I2OQ9p5ZIMX82yM4dTu1cJUQj0sgzEejfiIMYDda817Ooko9H6VmGJX62KfkRa5l7yE6hhhY2blWa6tpcyCy2LwERTEe4bafq4yoqkarhPA4mGiZyWn4gSq8ObO8-ugISVtWPWeaKGkampaOarcFR4gBD7ph097WYBKzX9hVjGppLMY4jpXRv"
       },
       {
         "id": 100,
@@ -3382,7 +3386,7 @@
       },
       {
         "id": 129,
-        "question": "[to do: add image] A developer receives the following error message when trying to launch or terminate an Amazon EC2 instance using a boto3 script. What should the developer do to correct this error message?",
+        "question": "A developer receives the following error message when trying to launch or terminate an Amazon EC2 instance using a boto3 script. What should the developer do to correct this error message?",
         "answers": [
           {
             "id": "1",
@@ -3404,11 +3408,12 @@
             "text": "Upgrade to the latest AWS CLI version so that boto3 can handle higher request rates",
             "isCorrect": false
           }
-        ]
+        ],
+        "code": "boto.exception.BotoServerError: BotoServerError: 503 Service Unavailable\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Response>\n  <Errors>\n    <Error>\n      <Code>RequestLimitExceeded</Code>\n      <Message>Request limit exceeded.</Message>\n    </Error>\n  </Errors>\n  <RequestID>bfddce84-53b3-4701-b728-dceefb696ced</RequestID>\n</Response>"
       },
       {
         "id": 130,
-        "question": "[to do: add image] Given the following AWS CloudFormation template. What is the MOST efficient way to reference the new Amazon S3 bucket from another AWS CloudFormation template?",
+        "question": "Given the following AWS CloudFormation template. What is the MOST efficient way to reference the new Amazon S3 bucket from another AWS CloudFormation template?",
         "answers": [
           {
             "id": "1",
@@ -3430,7 +3435,8 @@
             "text": "Use Fn::Include to include the existing template in other templates and use the ContentBucket resource directly",
             "isCorrect": false
           }
-        ]
+        ],
+        "code": "Description: Creates a new Amazon S3 bucket for shared content. Uses a random bucket name to avoid conflicts.\n\nResources:\n  ContentBucket:\n    Type: AWS::S3::Bucket\n\nOutputs:\n  ContentBucketName:\n    Value: !Ref ContentBucket"
       },
       {
         "id": 131,
@@ -5580,7 +5586,7 @@
       },
       {
         "id": 212,
-        "question": "[reminder: add image] An application is running on a cluster of Amazon EC2 instances. While trying to read objects stored within a single Amazon S3 bucket that are encrypted with server-side encryption with AWS KMS managed keys (SSE-KMS), the application receives the following error. Which combination of steps should be taken to prevent this failure? (Choose TWO)",
+        "question": "An application is running on a cluster of Amazon EC2 instances. While trying to read objects stored within a single Amazon S3 bucket that are encrypted with server-side encryption with AWS KMS managed keys (SSE-KMS), the application receives the following error. Which combination of steps should be taken to prevent this failure? (Choose TWO)",
         "answers": [
           {
             "id": "1",
@@ -5607,7 +5613,8 @@
             "text": "Use more than one customer master key (CMK) to encrypt S3 data",
             "isCorrect": false
           }
-        ]
+        ],
+        "code": "Service: AWSKMS; Status Code: 400; Error Code: ThrottlingException"
       },
       {
         "id": 213,
@@ -7504,7 +7511,7 @@
       },
       {
         "id": 281,
-        "question": "[to do: add image] A Developer accesses AWS CodeCommit over SSH. The SSH keys configured to access AWS CodeCommit are tied to a user with the following permissions. The Developer needs to create/delete branches. Which specific IAM permissions need to be added, based on the principle of least privilege?",
+        "question": "A Developer accesses AWS CodeCommit over SSH. The SSH keys configured to access AWS CodeCommit are tied to a user with the following permissions. The Developer needs to create/delete branches. Which specific IAM permissions need to be added, based on the principle of least privilege?",
         "answers": [
           {
             "id": "1",
@@ -7526,7 +7533,8 @@
             "text": "'codecommit:*'",
             "isCorrect": false
           }
-        ]
+        ],
+        "code": "{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [\n    {\n      \"Effect\": \"Allow\",\n      \"Action\": [\n        \"codecommit:BatchGetRepositories\",\n        \"codecommit:Get*\",\n        \"codecommit:List*\",\n        \"codecommit:GitPull\"\n      ],\n      \"Resource\": \"*\"\n    }\n  ]\n}"
       },
       {
         "id": 282,
@@ -7935,7 +7943,7 @@
       },
       {
         "id": 297,
-        "question": "[to do: add image]A Developer created configuration specifications for an AWS Elastic Beanstalk application in a file named healthcheckurl.yaml in the .ebextensions/directory of their application source bundle. The file contains the following: After the application launches, the health check is not being run on the correct path, even though it is valid. What can be done to correct this configuration file?",
+        "question": "A Developer created configuration specifications for an AWS Elastic Beanstalk application in a file named healthcheckurl.yaml in the .ebextensions/directory of their application source bundle. The file contains the following: After the application launches, the health check is not being run on the correct path, even though it is valid. What can be done to correct this configuration file?",
         "answers": [
           {
             "id": "1",
@@ -7957,7 +7965,8 @@
             "text": "Change the namespace of the option settings to a custom namespace",
             "isCorrect": false
           }
-        ]
+        ],
+        "code": "1. User logs in\n   - display user login page\n   - authenticate and authorize user access\n   => user login data\n\n2. Database queried for user\n   - create query for user table\n   - query user table for account & preferences\n   => user account data\n\n3. Display customized entry page\n   - modify greeting with user name\n   - display new items recommended for user"
       },
       {
         "id": 298,
@@ -9005,7 +9014,7 @@
       },
       {
         "id": 337,
-        "question": "[to do: add image] A company is building an application to track athlete performance using an Amazon DynamoDB table. Each item in the table is identified by a partition key (user_id) and a sort key (sport_name). The table design is shown below. (Note: Not all table attributes are shown) A Developer is asked to write a leaderboard application to display the top performers (user_id) based on the score for each sport_name. What process will allow the Developer to extract results MOST efficiently from the DynamoDB table?",
+        "question": "A company is building an application to track athlete performance using an Amazon DynamoDB table. Each item in the table is identified by a partition key (user_id) and a sort key (sport_name). The table design is shown below. (Note: Not all table attributes are shown) A Developer is asked to write a leaderboard application to display the top performers (user_id) based on the score for each sport_name. What process will allow the Developer to extract results MOST efficiently from the DynamoDB table?",
         "answers": [
           {
             "id": "1",
@@ -9027,7 +9036,8 @@
             "text": "Create a local secondary index with a primary key of sport_name and a sort key of score and get the results based on the score attribute",
             "isCorrect": false
           }
-        ]
+        ],
+        "code": "Partition Key: user_id\nSort Key: sport_name\nAttributes:\n  - score\n  - score_datetime"
       },
       {
         "id": 338,
@@ -9192,7 +9202,7 @@
       },
       {
         "id": 344,
-        "question": "[to do: add image] A company has an internet-facing application that uses Web Identity Federation to obtain a temporary credential from AWS Security Token Service (AWS STS). The app then uses the token to access AWS services. Review the following response: Based on the response displayed what permissions are associated with the call from the application?",
+        "question": "A company has an internet-facing application that uses Web Identity Federation to obtain a temporary credential from AWS Security Token Service (AWS STS). The app then uses the token to access AWS services. Review the following response: Based on the response displayed what permissions are associated with the call from the application?",
         "answers": [
           {
             "id": "1",
@@ -9214,7 +9224,8 @@
             "text": "Permissions associated with the account that owns the AWS service",
             "isCorrect": false
           }
-        ]
+        ],
+        "code": "<AssumeRoleWithWebIdentityResponse xmlns=\"https://sts.amazonaws.com/doc/2011-06-15/\">\n  <AssumeRoleWithWebIdentityResult>\n    <SubjectFromWebIdentityToken>amzn1.account.AF6RHO7KZU5XRVQGVGXK6HB56KR2A</SubjectFromWebIdentityToken>\n    <Audience>client.54988415318684864243.1548@apps.example.com</Audience>\n    <AssumedRoleUser>\n      <Arn>arn:aws:sts::123456789012:assumed-role/FederatedWebIdentityRole/app1</Arn>\n      <AssumedRoleId>AROACLKWSDQRAOEXAMPLE:app1</AssumedRoleId>\n    </AssumedRoleUser>\n    <Credentials>\n      <SessionToken>AQoDYXdzEE0a8ANXXXXYXNOlewE5TijQyp+IEXAMPLE</SessionToken>\n      <SecretAccessKey>wJalrXUtnFEMI/K7MDENG/bPxRfiCYzEXAMPLEKEY</SecretAccessKey>\n      <Expiration>2014-10-24T23:00:23Z</Expiration>\n      <AccessKeyId>ASgeTAIOSFODNN7EXAMPLE</AccessKeyId>\n    </Credentials>\n    <Provider>www.amazon.com</Provider>\n  </AssumeRoleWithWebIdentityResult>\n  <ResponseMetadata>\n    <RequestId>ad4156e9-bce1-11e2-82e6-6c6efEXAMPLE</RequestId>\n  </ResponseMetadata>\n</AssumeRoleWithWebIdentityResponse>"
       },
       {
         "id": 345,
@@ -10283,7 +10294,7 @@
       },
       {
         "id": 385,
-        "question": "[to do: add image] A Developer has implemented a Lambda function that needs to add new customers to an RDS database that is expected to run hundreds of times per hour. The Lambda function is configured to use 512MB of RAM and is based on the following pseudo code. After testing the Lambda function, the Developer notices that the Lambda execution time is much longer than expected. What should the Developer do to improve performance?",
+        "question": "A Developer has implemented a Lambda function that needs to add new customers to an RDS database that is expected to run hundreds of times per hour. The Lambda function is configured to use 512MB of RAM and is based on the following pseudo code. After testing the Lambda function, the Developer notices that the Lambda execution time is much longer than expected. What should the Developer do to improve performance?",
         "answers": [
           {
             "id": "1",
@@ -10305,7 +10316,8 @@
             "text": "Replace RDS wit Amazon DynamoDB to implement control over the number of writes per second",
             "isCorrect": false
           }
-        ]
+        ],
+        "code": "def lambda_handler(event, context):\n\n    db = database.connect()\n\n    db.statement('INSERT INTO Customers (CustomerName) VALUES (context.name)')\n\n    db.close()"
       },
       {
         "id": 386,
