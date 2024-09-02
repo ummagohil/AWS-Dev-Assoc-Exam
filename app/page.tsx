@@ -5,6 +5,8 @@ import JSConfetti from "js-confetti";
 import AnswerSelect from "./components/answerSelection";
 import Result from "./components/score";
 import Header from "./components/header";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { tomorrow } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 export default function Home() {
   const [selectedAnswers, setSelectedAnswers] = useState<{
@@ -118,7 +120,13 @@ export default function Home() {
         {randomQuestions.map((q) => (
           <div key={q.id}>
             <br />
-            <li>{q.question}</li>
+            <li className="text-orange-500">{q.question}</li>
+            {q.code && (
+              <SyntaxHighlighter language="yaml" style={tomorrow}>
+                {q.code}
+              </SyntaxHighlighter>
+            )}
+
             <ul className="list-disc list-inside">
               {q.answers.map((a: { id: Key }) => (
                 <li key={a.id}>
