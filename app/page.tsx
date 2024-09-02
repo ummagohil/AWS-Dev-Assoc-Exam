@@ -121,12 +121,12 @@ export default function Home() {
           <div key={q.id}>
             <br />
             <li>{q.question}</li>
-            <li>
-              {" "}
+            {q.code && (
               <SyntaxHighlighter language="yaml" style={tomorrow}>
                 {q.code}
               </SyntaxHighlighter>
-            </li>
+            )}
+
             <ul className="list-disc list-inside">
               {q.answers.map((a: { id: Key }) => (
                 <li key={a.id}>
