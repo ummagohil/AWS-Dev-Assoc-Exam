@@ -1548,7 +1548,8 @@
             "text": "Use AWS Serverless create-package to embed the source file directly into the existing CloudFormation template",
             "isCorrect": false
           }
-        ]
+        ],
+        "code": "Transform: AWS::Serverless-2016-10-31\nResources:\n  StoreFunc:\n    Type: AWS::Serverless::Function\n    Properties:\n      Handler: store.get_store\n      Runtime: python3.6"
       },
       {
         "id": 60,
