@@ -120,7 +120,7 @@ export default function Home() {
         {randomQuestions.map((q) => (
           <div key={q.id}>
             <br />
-            <li>{q.question}</li>
+            <li className="text-orange-500">{q.question}</li>
             {q.code && (
               <SyntaxHighlighter language="yaml" style={tomorrow}>
                 {q.code}
